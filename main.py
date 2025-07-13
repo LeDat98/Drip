@@ -7,11 +7,11 @@ from PyQt5.QtGui import QIcon, QPixmap, QPainter, QColor, QFont
 from pynput import keyboard
 import logging
 
-from database_manager import DatabaseManager
-from create_new_flashcard import CreateNewFlashcard
-from reviewer_schedule_maker import ReviewerScheduleMaker
-from settings_window import SettingsWindow
-from sound_manager import get_sound_manager
+from src.database.database_manager import DatabaseManager
+from src.ui.create_new_flashcard import CreateNewFlashcard
+from src.core.reviewer_schedule_maker import ReviewerScheduleMaker
+from src.ui.settings_window import SettingsWindow
+from src.utils.sound_manager import get_sound_manager
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

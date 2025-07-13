@@ -10,11 +10,11 @@ from PyQt5.QtWidgets import QApplication, QVBoxLayout, QHBoxLayout, QPushButton,
 from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QFont
 
-# Add current directory to Python path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Add project root to Python path
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 
-from reviewer_module import ReviewerModule
-from database_manager import FlashCard
+from src.ui.reviewer_module import ReviewerModule
+from src.database.database_manager import FlashCard
 
 class StageTestController(QWidget):
     def __init__(self):

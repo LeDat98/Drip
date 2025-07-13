@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout,
 from PyQt5.QtCore import Qt, QTimer, pyqtSignal, QPropertyAnimation, QRect, QEasingCurve
 from PyQt5.QtGui import QFont
 import logging
-from sound_manager import get_sound_manager
+from src.utils.sound_manager import get_sound_manager
 
 logger = logging.getLogger(__name__)
 

@@ -2,9 +2,9 @@ from typing import Tuple, List, Optional
 import logging
 from PyQt5.QtWidgets import QApplication
 
-from database_manager import DatabaseManager, FlashCard
-from reviewer_module import ReviewerModule
-from pre_review_notification import PreReviewNotification
+from src.database.database_manager import DatabaseManager, FlashCard
+from src.ui.reviewer_module import ReviewerModule
+from src.ui.pre_review_notification import PreReviewNotification
 
 logger = logging.getLogger(__name__)
 

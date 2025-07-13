@@ -25,7 +25,7 @@ class FlashCard:
         self.interval_hours = interval_hours
 
 class DatabaseManager:
-    def __init__(self, db_path: str = "drip.db"):
+    def __init__(self, db_path: str = "data/drip.db"):
         self.db_path = db_path
         self.init_database()
     

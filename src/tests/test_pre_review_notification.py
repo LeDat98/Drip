@@ -10,9 +10,12 @@ from datetime import datetime
 from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QPushButton, QLabel
 from PyQt5.QtCore import Qt, QTimer
 
-from pre_review_notification import PreReviewNotification
-from database_manager import DatabaseManager
-from reviewer_schedule_maker import ReviewerScheduleMaker
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
+
+from src.ui.pre_review_notification import PreReviewNotification
+from src.database.database_manager import DatabaseManager
+from src.core.reviewer_schedule_maker import ReviewerScheduleMaker
 
 class PreReviewTestController(QWidget):
     """Test controller for pre-review notification functionality"""

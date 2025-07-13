@@ -17,7 +17,7 @@ class SoundManager:
     """
     
     def __init__(self):
-        self.settings_file = "drip_settings.json"
+        self.settings_file = "data/drip_settings.json"
         self.sound_enabled = True
         self.notification_sound = None
         
@@ -33,9 +33,9 @@ class SoundManager:
             # CUSTOM SOUND PATHS - Bạn có thể thay đổi đường dẫn tại đây
             custom_sound_paths = [
                 # Drip custom notification sounds (WAV format)
-                "static/sound/DripSoud3.wav",       # File âm thanh chính của Drip
-                "static/sound/DripSoud1.wav",       # File âm thanh dự phòng 1
-                "static/sound/DripSoud2.wav",       # File âm thanh dự phòng 2
+                "assets/sound/DripSoud3.wav",       # File âm thanh chính của Drip
+                "assets/sound/DripSoud1.wav",       # File âm thanh dự phòng 1
+                "assets/sound/DripSoud2.wav",       # File âm thanh dự phòng 2
                 
                 # Backup custom sounds
                 "sounds/notification.wav",           # Đường dẫn tương đối

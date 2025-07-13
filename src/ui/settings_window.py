@@ -7,7 +7,7 @@ from PyQt5.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QLabel,
                              QPushButton, QCheckBox, QGroupBox, QFrame, QMessageBox)
 from PyQt5.QtCore import Qt, pyqtSignal
 import logging
-from sound_manager import get_sound_manager
+from src.utils.sound_manager import get_sound_manager
 
 logger = logging.getLogger(__name__)
 

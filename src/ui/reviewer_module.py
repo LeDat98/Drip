@@ -6,7 +6,7 @@ from typing import List, Dict
 import logging
 import random
 
-from database_manager import FlashCard
+from src.database.database_manager import FlashCard
 
 logger = logging.getLogger(__name__)
 
