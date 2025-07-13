@@ -1,0 +1,1197 @@
+2025-07-11 00:48:13,038 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-11 00:48:13,104 - main - INFO - System tray icon created successfully
+2025-07-11 00:48:13,105 - main - INFO - Hotkeys initialized successfully!
+2025-07-11 00:48:13,105 - main - INFO - Available hotkeys:
+2025-07-11 00:48:13,105 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-11 00:48:13,105 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-11 00:48:13,108 - main - INFO - Next review scheduled in 30 minutes
+2025-07-11 00:48:13,120 - main - INFO - Drip application initialized successfully
+2025-07-11 00:48:13,121 - main - INFO - Starting Drip application
+2025-07-11 00:48:23,970 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-11 00:48:23,970 - main - INFO - Opening create flashcard window...
+2025-07-11 00:48:24,077 - main - INFO - Create flashcard window opened successfully
+2025-07-11 00:50:18,830 - create_new_flashcard - INFO - Flashcard created successfully with ID: 1
+2025-07-11 00:52:11,990 - create_new_flashcard - INFO - Flashcard created successfully with ID: 2
+2025-07-11 01:18:13,073 - reviewer_schedule_maker - INFO - Starting review session with 2 flashcards
+2025-07-11 01:18:13,086 - reviewer_module - INFO - Started review session with 2 flashcards
+2025-07-11 01:49:18,599 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-11 01:49:18,654 - main - INFO - System tray icon created successfully
+2025-07-11 01:49:18,655 - main - INFO - Hotkeys initialized successfully!
+2025-07-11 01:49:18,655 - main - INFO - Available hotkeys:
+2025-07-11 01:49:18,655 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-11 01:49:18,655 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-11 01:49:18,657 - main - INFO - Next review scheduled in 15 minutes
+2025-07-11 01:49:18,760 - main - INFO - Drip application initialized successfully
+2025-07-11 01:49:18,760 - main - INFO - Starting Drip application
+2025-07-11 01:49:24,184 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-11 01:49:24,184 - main - INFO - Opening create flashcard window...
+2025-07-11 01:49:24,284 - main - INFO - Create flashcard window opened successfully
+2025-07-11 01:55:34,407 - main - INFO - Shutting down Drip application
+2025-07-11 01:55:36,351 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-11 01:55:36,407 - main - INFO - System tray icon created successfully
+2025-07-11 01:55:36,407 - main - INFO - Hotkeys initialized successfully!
+2025-07-11 01:55:36,408 - main - INFO - Available hotkeys:
+2025-07-11 01:55:36,408 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-11 01:55:36,408 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-11 01:55:36,410 - main - INFO - Next review scheduled in 15 minutes
+2025-07-11 01:55:36,512 - main - INFO - Drip application initialized successfully
+2025-07-11 01:55:36,513 - main - INFO - Starting Drip application
+2025-07-11 01:55:42,724 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-11 01:55:42,724 - main - INFO - Opening create flashcard window...
+2025-07-11 01:55:42,832 - main - INFO - Create flashcard window opened successfully
+2025-07-11 02:00:36,435 - main - INFO - Shutting down Drip application
+2025-07-11 02:00:38,234 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-11 02:00:38,299 - main - INFO - System tray icon created successfully
+2025-07-11 02:00:38,300 - main - INFO - Hotkeys initialized successfully!
+2025-07-11 02:00:38,300 - main - INFO - Available hotkeys:
+2025-07-11 02:00:38,300 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-11 02:00:38,300 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-11 02:00:38,302 - main - INFO - Next review scheduled in 15 minutes
+2025-07-11 02:00:38,379 - main - INFO - Drip application initialized successfully
+2025-07-11 02:00:38,380 - main - INFO - Starting Drip application
+2025-07-11 02:00:42,093 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-11 02:00:42,094 - main - INFO - Opening create flashcard window...
+2025-07-11 02:00:42,191 - main - INFO - Create flashcard window opened successfully
+2025-07-11 02:04:15,052 - main - INFO - Shutting down Drip application
+2025-07-11 02:04:17,588 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-11 02:04:17,642 - main - INFO - System tray icon created successfully
+2025-07-11 02:04:17,642 - main - INFO - Hotkeys initialized successfully!
+2025-07-11 02:04:17,643 - main - INFO - Available hotkeys:
+2025-07-11 02:04:17,643 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-11 02:04:17,643 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-11 02:04:17,643 - main - INFO - Next review scheduled in 15 minutes
+2025-07-11 02:04:17,742 - main - INFO - Drip application initialized successfully
+2025-07-11 02:04:17,743 - main - INFO - Starting Drip application
+2025-07-11 02:04:23,317 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-11 02:04:23,317 - main - INFO - Opening create flashcard window...
+2025-07-11 02:04:23,418 - main - INFO - Create flashcard window opened successfully
+2025-07-11 02:05:54,671 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-11 02:05:54,671 - main - INFO - Opening create flashcard window...
+2025-07-11 02:05:54,683 - main - INFO - Create flashcard window opened successfully
+2025-07-11 02:06:02,334 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-11 02:06:02,334 - main - INFO - Opening create flashcard window...
+2025-07-11 02:06:02,337 - main - INFO - Create flashcard window opened successfully
+2025-07-11 02:06:11,284 - main - INFO - Shutting down Drip application
+2025-07-11 02:06:55,280 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-11 02:06:55,334 - main - INFO - System tray icon created successfully
+2025-07-11 02:06:55,335 - main - INFO - Hotkeys initialized successfully!
+2025-07-11 02:06:55,335 - main - INFO - Available hotkeys:
+2025-07-11 02:06:55,335 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-11 02:06:55,335 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-11 02:06:55,336 - main - INFO - Next review scheduled in 15 minutes
+2025-07-11 02:06:55,419 - main - INFO - Drip application initialized successfully
+2025-07-11 02:06:55,420 - main - INFO - Starting Drip application
+2025-07-11 02:07:01,633 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-11 02:07:01,633 - main - INFO - Opening create flashcard window...
+2025-07-11 02:07:01,733 - main - INFO - Create flashcard window opened successfully
+2025-07-11 02:07:39,904 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-11 02:07:39,905 - main - INFO - Opening create flashcard window...
+2025-07-11 02:07:39,918 - main - INFO - Create flashcard window opened successfully
+2025-07-11 02:08:08,080 - reviewer_schedule_maker - INFO - Starting review session with 2 flashcards
+2025-07-11 02:08:08,099 - reviewer_module - INFO - Started review session with 2 flashcards
+2025-07-11 02:08:22,128 - reviewer_module - INFO - Review session completed with 2 results
+2025-07-11 02:08:22,128 - reviewer_schedule_maker - INFO - Review completed with 2 results
+2025-07-11 02:08:22,229 - reviewer_schedule_maker - INFO - Updating flashcard 1 with result: TIMEOUT
+2025-07-11 02:08:22,229 - reviewer_schedule_maker - INFO - Updating flashcard 2 with result: TIMEOUT
+2025-07-11 02:08:22,229 - reviewer_schedule_maker - INFO - Updated 2 flashcards with review results
+2025-07-11 02:08:22,229 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 15 minutes
+2025-07-11 02:08:22,230 - main - INFO - Manual review session completed successfully
+2025-07-11 02:08:22,230 - main - INFO - Next review scheduled in 15 minutes
+2025-07-11 02:17:22,541 - main - INFO - Shutting down Drip application
+2025-07-12 00:32:52,487 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-12 00:32:52,596 - main - INFO - System tray icon created successfully
+2025-07-12 00:32:52,597 - main - INFO - Hotkeys initialized successfully!
+2025-07-12 00:32:52,597 - main - INFO - Available hotkeys:
+2025-07-12 00:32:52,597 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-12 00:32:52,597 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-12 00:32:52,603 - main - INFO - Found 1 overdue flashcards on startup, triggering review
+2025-07-12 00:32:52,700 - main - INFO - Drip application initialized successfully
+2025-07-12 00:32:52,700 - main - INFO - Starting Drip application
+2025-07-12 00:32:55,460 - reviewer_schedule_maker - INFO - Starting review session with 2 flashcards
+2025-07-12 00:32:55,527 - reviewer_module - INFO - Started review session with 2 flashcards
+2025-07-12 00:33:05,912 - reviewer_module - INFO - Review session completed with 2 results
+2025-07-12 00:33:05,913 - reviewer_schedule_maker - INFO - Review completed with 2 results
+2025-07-12 00:33:06,013 - reviewer_schedule_maker - INFO - Updating flashcard 1 with result: True
+2025-07-12 00:33:06,019 - reviewer_schedule_maker - INFO - Updating flashcard 2 with result: True
+2025-07-12 00:33:06,026 - reviewer_schedule_maker - INFO - Updated 2 flashcards with review results
+2025-07-12 00:33:06,026 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 30 minutes
+2025-07-12 00:33:06,026 - main - INFO - Automatic review session completed
+2025-07-12 00:33:06,030 - main - INFO - Next review scheduled in 30 minutes
+2025-07-12 00:35:12,853 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-12 00:35:12,853 - main - INFO - Opening create flashcard window...
+2025-07-12 00:35:12,891 - main - INFO - Create flashcard window opened successfully
+2025-07-12 00:36:18,444 - create_new_flashcard - INFO - Flashcard created successfully with ID: 3
+2025-07-12 00:37:21,900 - create_new_flashcard - INFO - Flashcard created successfully with ID: 4
+2025-07-12 00:38:14,574 - create_new_flashcard - INFO - Flashcard created successfully with ID: 5
+2025-07-12 00:39:13,655 - create_new_flashcard - INFO - Flashcard created successfully with ID: 6
+2025-07-12 01:01:24,397 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-12 01:01:24,452 - main - INFO - System tray icon created successfully
+2025-07-12 01:01:24,453 - main - INFO - Hotkeys initialized successfully!
+2025-07-12 01:01:24,453 - main - INFO - Available hotkeys:
+2025-07-12 01:01:24,453 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-12 01:01:24,453 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-12 01:01:24,459 - main - INFO - No overdue flashcards on startup
+2025-07-12 01:01:24,463 - main - INFO - Next review scheduled in 30 minutes
+2025-07-12 01:01:24,530 - main - INFO - Drip application initialized successfully
+2025-07-12 01:01:24,530 - main - INFO - Starting Drip application
+2025-07-12 01:01:58,036 - main - INFO - Ctrl+Shift+R detected - Starting manual review
+2025-07-12 01:01:58,040 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-12 01:01:58,040 - main - INFO - No flashcards due for review
+2025-07-12 01:31:24,966 - reviewer_schedule_maker - INFO - Starting review session with 4 flashcards
+2025-07-12 01:31:25,034 - reviewer_module - INFO - Started review session with 4 flashcards
+2025-07-12 01:31:29,947 - reviewer_module - INFO - Marking flashcard 4 (Training) as TIMEOUT due to early exit
+2025-07-12 01:31:29,947 - reviewer_module - INFO - Marking flashcard 5 (Dataset) as TIMEOUT due to early exit
+2025-07-12 01:31:29,947 - reviewer_module - INFO - Marking flashcard 6 (Inference) as TIMEOUT due to early exit
+2025-07-12 01:31:32,982 - reviewer_module - INFO - Review session completed with 4 results
+2025-07-12 01:31:32,982 - reviewer_schedule_maker - INFO - Review completed with 4 results
+2025-07-12 01:31:33,083 - reviewer_schedule_maker - INFO - Updating flashcard 3 with result: TIMEOUT
+2025-07-12 01:31:33,091 - reviewer_schedule_maker - INFO - Updating flashcard 4 with result: TIMEOUT
+2025-07-12 01:31:33,097 - reviewer_schedule_maker - INFO - Updating flashcard 5 with result: TIMEOUT
+2025-07-12 01:31:33,102 - reviewer_schedule_maker - INFO - Updating flashcard 6 with result: TIMEOUT
+2025-07-12 01:31:33,108 - reviewer_schedule_maker - INFO - Updated 4 flashcards with review results
+2025-07-12 01:31:33,108 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 30 minutes
+2025-07-12 01:31:33,108 - main - INFO - Automatic review session completed
+2025-07-12 01:31:33,111 - main - INFO - Next review scheduled in 30 minutes
+2025-07-12 02:01:32,923 - reviewer_schedule_maker - INFO - Starting review session with 2 flashcards
+2025-07-12 02:01:32,931 - reviewer_module - INFO - Started review session with 2 flashcards
+2025-07-12 02:01:47,982 - reviewer_module - INFO - Marking flashcard 2 (propose) as TIMEOUT due to early exit
+2025-07-12 02:01:50,990 - reviewer_module - INFO - Review session completed with 2 results
+2025-07-12 02:01:50,990 - reviewer_schedule_maker - INFO - Review completed with 2 results
+2025-07-12 02:01:50,990 - reviewer_schedule_maker - INFO - Review completed with 2 results
+2025-07-12 02:01:51,090 - reviewer_schedule_maker - INFO - Updating flashcard 1 with result: TIMEOUT
+2025-07-12 02:01:51,097 - reviewer_schedule_maker - INFO - Updating flashcard 2 with result: TIMEOUT
+2025-07-12 02:01:51,103 - reviewer_schedule_maker - INFO - Updated 2 flashcards with review results
+2025-07-12 02:01:51,103 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 15 minutes
+2025-07-12 02:01:51,103 - main - INFO - Automatic review session completed
+2025-07-12 02:01:51,107 - main - INFO - Found overdue flashcards, triggering review with delay
+2025-07-12 02:01:53,964 - reviewer_schedule_maker - INFO - Starting review session with 4 flashcards
+2025-07-12 02:01:53,966 - reviewer_module - INFO - Started review session with 4 flashcards
+2025-07-12 02:02:06,019 - reviewer_module - INFO - Review session completed with 4 results
+2025-07-12 02:02:06,028 - reviewer_schedule_maker - INFO - Review completed with 4 results
+2025-07-12 02:02:06,028 - reviewer_schedule_maker - INFO - Review completed with 4 results
+2025-07-12 02:02:06,028 - reviewer_schedule_maker - INFO - Review completed with 4 results
+2025-07-12 02:02:06,128 - reviewer_schedule_maker - INFO - Updating flashcard 3 with result: True
+2025-07-12 02:02:06,134 - reviewer_schedule_maker - INFO - Updating flashcard 4 with result: True
+2025-07-12 02:02:06,140 - reviewer_schedule_maker - INFO - Updating flashcard 5 with result: True
+2025-07-12 02:02:06,146 - reviewer_schedule_maker - INFO - Updating flashcard 6 with result: True
+2025-07-12 02:02:06,152 - reviewer_schedule_maker - INFO - Updated 4 flashcards with review results
+2025-07-12 02:02:06,152 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 30 minutes
+2025-07-12 02:02:06,152 - main - INFO - Automatic review session completed
+2025-07-12 02:02:06,155 - main - INFO - Next review scheduled in 30 minutes
+2025-07-12 02:09:28,917 - main - INFO - Shutting down Drip application
+2025-07-12 02:09:31,212 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-12 02:09:31,266 - main - INFO - System tray icon created successfully
+2025-07-12 02:09:31,266 - main - INFO - Hotkeys initialized successfully!
+2025-07-12 02:09:31,267 - main - INFO - Available hotkeys:
+2025-07-12 02:09:31,267 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-12 02:09:31,267 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-12 02:09:31,273 - main - INFO - No overdue flashcards on startup
+2025-07-12 02:09:31,277 - main - INFO - Next review scheduled in 30 minutes
+2025-07-12 02:09:31,370 - main - INFO - Drip application initialized successfully
+2025-07-12 02:09:31,370 - main - INFO - Starting Drip application
+2025-07-12 02:09:46,376 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-12 02:09:46,377 - main - INFO - No flashcards due for review
+2025-07-12 02:23:08,397 - main - INFO - Shutting down Drip application
+2025-07-12 23:25:25,713 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-12 23:25:25,815 - main - INFO - System tray icon created successfully
+2025-07-12 23:25:25,816 - main - INFO - Hotkeys initialized successfully!
+2025-07-12 23:25:25,816 - main - INFO - Available hotkeys:
+2025-07-12 23:25:25,816 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-12 23:25:25,816 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-12 23:25:25,822 - main - INFO - Found 1 overdue flashcards on startup, triggering review
+2025-07-12 23:25:25,911 - main - INFO - Drip application initialized successfully
+2025-07-12 23:25:25,911 - main - INFO - Starting Drip application
+2025-07-12 23:25:28,781 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-12 23:25:28,836 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-12 23:26:02,296 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-12 23:26:02,300 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-12 23:26:02,400 - reviewer_schedule_maker - INFO - Updating flashcard 3 with result: True
+2025-07-12 23:26:02,407 - reviewer_schedule_maker - INFO - Updating flashcard 4 with result: True
+2025-07-12 23:26:02,412 - reviewer_schedule_maker - INFO - Updating flashcard 5 with result: True
+2025-07-12 23:26:02,419 - reviewer_schedule_maker - INFO - Updating flashcard 6 with result: True
+2025-07-12 23:26:02,424 - reviewer_schedule_maker - INFO - Updating flashcard 1 with result: True
+2025-07-12 23:26:02,429 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-12 23:26:02,430 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 15 minutes
+2025-07-12 23:26:02,430 - main - INFO - Automatic review session completed
+2025-07-12 23:26:02,434 - main - INFO - Found overdue flashcards, triggering review with delay
+2025-07-12 23:26:05,291 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-12 23:26:05,294 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-12 23:26:20,288 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-12 23:26:20,292 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-12 23:26:20,292 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-12 23:26:20,392 - reviewer_schedule_maker - INFO - Updating flashcard 2 with result: True
+2025-07-12 23:26:20,399 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-12 23:26:20,399 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 30 minutes
+2025-07-12 23:26:20,399 - main - INFO - Automatic review session completed
+2025-07-12 23:26:20,402 - main - INFO - Next review scheduled in 30 minutes
+2025-07-12 23:35:58,435 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-12 23:35:58,435 - main - INFO - Opening create flashcard window...
+2025-07-12 23:35:58,496 - main - INFO - Create flashcard window opened successfully
+2025-07-12 23:36:55,743 - create_new_flashcard - INFO - Flashcard created successfully with ID: 7
+2025-07-12 23:43:21,485 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-12 23:43:21,485 - main - INFO - Opening create flashcard window...
+2025-07-12 23:43:21,499 - main - INFO - Create flashcard window opened successfully
+2025-07-12 23:43:59,137 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-12 23:43:59,137 - main - INFO - Opening create flashcard window...
+2025-07-12 23:43:59,150 - main - INFO - Create flashcard window opened successfully
+2025-07-12 23:46:04,874 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-12 23:46:04,874 - main - INFO - Opening create flashcard window...
+2025-07-12 23:46:04,887 - main - INFO - Create flashcard window opened successfully
+2025-07-12 23:49:18,184 - main - INFO - Shutting down Drip application
+2025-07-12 23:53:40,280 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-12 23:53:40,335 - main - INFO - System tray icon created successfully
+2025-07-12 23:53:40,336 - main - INFO - Hotkeys initialized successfully!
+2025-07-12 23:53:40,336 - main - INFO - Available hotkeys:
+2025-07-12 23:53:40,336 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-12 23:53:40,336 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-12 23:53:40,342 - main - INFO - No overdue flashcards on startup
+2025-07-12 23:53:40,345 - main - INFO - Next review scheduled in 5 minutes
+2025-07-12 23:53:40,444 - main - INFO - Drip application initialized successfully
+2025-07-12 23:53:40,444 - main - INFO - Starting Drip application
+2025-07-12 23:54:09,717 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-12 23:54:09,717 - main - INFO - Opening create flashcard window...
+2025-07-12 23:54:09,818 - main - INFO - Create flashcard window opened successfully
+2025-07-12 23:54:29,660 - create_new_flashcard - INFO - Flashcard created successfully with ID: 8
+2025-07-12 23:54:35,575 - create_new_flashcard - INFO - Flashcard created successfully with ID: 9
+2025-07-12 23:54:45,841 - create_new_flashcard - INFO - Flashcard created successfully with ID: 10
+2025-07-12 23:55:06,909 - create_new_flashcard - INFO - Flashcard created successfully with ID: 11
+2025-07-12 23:55:14,476 - create_new_flashcard - INFO - Flashcard created successfully with ID: 12
+2025-07-12 23:55:32,006 - create_new_flashcard - INFO - Flashcard created successfully with ID: 13
+2025-07-12 23:55:47,321 - create_new_flashcard - INFO - Flashcard created successfully with ID: 14
+2025-07-12 23:55:57,677 - create_new_flashcard - INFO - Flashcard created successfully with ID: 15
+2025-07-12 23:56:02,561 - create_new_flashcard - INFO - Flashcard created successfully with ID: 16
+2025-07-12 23:58:40,990 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-12 23:58:41,161 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:03:40,835 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:03:40,840 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:08:40,843 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 00:08:40,845 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 00:08:40,862 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-13 00:08:46,808 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-13 00:08:46,809 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 00:08:46,809 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 00:08:46,909 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: True
+2025-07-13 00:08:46,915 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-13 00:08:46,915 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 00:08:46,915 - main - INFO - Automatic review session completed
+2025-07-13 00:08:46,918 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:13:46,785 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:13:46,789 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:18:46,797 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:18:46,800 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:23:46,781 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:23:46,786 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:28:46,785 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 00:28:46,785 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 00:28:46,785 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 00:28:46,785 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 00:28:46,785 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 00:28:46,787 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 00:28:46,791 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 00:29:01,851 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 00:29:01,851 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 00:29:01,851 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 00:29:01,952 - reviewer_schedule_maker - INFO - Updating flashcard 8 with result: True
+2025-07-13 00:29:01,959 - reviewer_schedule_maker - INFO - Updating flashcard 9 with result: True
+2025-07-13 00:29:01,964 - reviewer_schedule_maker - INFO - Updating flashcard 10 with result: True
+2025-07-13 00:29:01,971 - reviewer_schedule_maker - INFO - Updating flashcard 11 with result: True
+2025-07-13 00:29:01,978 - reviewer_schedule_maker - INFO - Updating flashcard 12 with result: True
+2025-07-13 00:29:01,985 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 00:29:01,985 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 15 minutes
+2025-07-13 00:29:01,985 - main - INFO - Automatic review session completed
+2025-07-13 00:29:01,989 - main - INFO - Found overdue flashcards, triggering review with delay
+2025-07-13 00:29:04,846 - reviewer_schedule_maker - INFO - Starting review session with 4 flashcards
+2025-07-13 00:29:04,846 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 00:29:04,846 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 00:29:04,846 - reviewer_module - INFO - Marking flashcard 9 (go) as TIMEOUT due to early exit
+2025-07-13 00:29:04,846 - reviewer_module - INFO - Marking flashcard 10 (wait) as TIMEOUT due to early exit
+2025-07-13 00:29:04,846 - reviewer_module - INFO - Marking flashcard 11 (width) as TIMEOUT due to early exit
+2025-07-13 00:29:04,846 - reviewer_module - INFO - Marking flashcard 12 (height) as TIMEOUT due to early exit
+2025-07-13 00:29:04,846 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 00:29:04,846 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 00:29:04,848 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 00:29:04,851 - reviewer_module - INFO - Started review session with 4 flashcards
+2025-07-13 00:29:18,800 - reviewer_module - INFO - Review session completed with 4 results
+2025-07-13 00:29:18,801 - reviewer_schedule_maker - INFO - Review completed with 4 results
+2025-07-13 00:29:18,801 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 00:29:18,901 - reviewer_schedule_maker - INFO - Updating flashcard 13 with result: True
+2025-07-13 00:29:18,908 - reviewer_schedule_maker - INFO - Updating flashcard 14 with result: True
+2025-07-13 00:29:18,914 - reviewer_schedule_maker - INFO - Updating flashcard 15 with result: True
+2025-07-13 00:29:18,921 - reviewer_schedule_maker - INFO - Updating flashcard 16 with result: True
+2025-07-13 00:29:18,928 - reviewer_schedule_maker - INFO - Updated 4 flashcards with review results
+2025-07-13 00:29:18,929 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 00:29:18,929 - main - INFO - Automatic review session completed
+2025-07-13 00:29:18,933 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:34:18,786 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:34:18,790 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:39:18,792 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:39:18,795 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:44:18,828 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:44:18,832 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:49:18,795 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:49:18,799 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:54:18,803 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:54:18,807 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 00:59:18,813 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 00:59:18,817 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 01:04:18,794 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 01:04:18,798 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 01:04:46,645 - main - INFO - Shutting down Drip application
+2025-07-13 01:04:48,593 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-13 01:04:48,650 - main - INFO - System tray icon created successfully
+2025-07-13 01:04:48,650 - main - INFO - Hotkeys initialized successfully!
+2025-07-13 01:04:48,651 - main - INFO - Available hotkeys:
+2025-07-13 01:04:48,651 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-13 01:04:48,651 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-13 01:04:48,657 - main - INFO - No overdue flashcards on startup
+2025-07-13 01:04:48,660 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 01:04:48,732 - main - INFO - Drip application initialized successfully
+2025-07-13 01:04:48,732 - main - INFO - Starting Drip application
+2025-07-13 01:09:48,780 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 01:09:48,783 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:09:48,841 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-13 01:10:06,817 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-13 01:10:06,818 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:10:06,818 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:10:06,918 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: TIMEOUT
+2025-07-13 01:10:06,924 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-13 01:10:06,924 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 15 minutes
+2025-07-13 01:10:06,924 - main - INFO - Automatic review session completed
+2025-07-13 01:10:06,928 - main - INFO - Found overdue flashcards, triggering review with delay
+2025-07-13 01:10:09,784 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 01:10:09,784 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 01:10:09,785 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 01:10:09,785 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:10:09,785 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 01:10:09,787 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:10:09,791 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-13 01:10:27,857 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-13 01:10:27,858 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:10:27,858 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:10:27,958 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: TIMEOUT
+2025-07-13 01:10:27,964 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-13 01:10:27,965 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 15 minutes
+2025-07-13 01:10:27,965 - main - INFO - Automatic review session completed
+2025-07-13 01:10:27,967 - main - INFO - Found overdue flashcards, triggering review with delay
+2025-07-13 01:10:30,824 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 01:10:30,825 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 01:10:30,825 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 01:10:30,825 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:10:30,825 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 01:10:30,827 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:10:30,831 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-13 01:10:48,794 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-13 01:10:48,794 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:10:48,794 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:10:48,895 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: TIMEOUT
+2025-07-13 01:10:48,904 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-13 01:10:48,904 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 15 minutes
+2025-07-13 01:10:48,904 - main - INFO - Automatic review session completed
+2025-07-13 01:10:48,908 - main - INFO - Found overdue flashcards, triggering review with delay
+2025-07-13 01:10:51,783 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 01:10:51,783 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 01:10:51,783 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 01:10:51,783 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:10:51,783 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 01:10:51,785 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:10:51,788 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-13 01:11:00,319 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-13 01:11:00,320 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:11:00,320 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:11:00,420 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: ESCAPE
+2025-07-13 01:11:00,427 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-13 01:11:00,427 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 15 minutes
+2025-07-13 01:11:00,427 - main - INFO - Automatic review session completed
+2025-07-13 01:11:00,431 - main - INFO - Found overdue flashcards, triggering review with delay
+2025-07-13 01:11:02,138 - main - INFO - Shutting down Drip application
+2025-07-13 01:12:35,538 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-13 01:12:35,592 - main - INFO - System tray icon created successfully
+2025-07-13 01:12:35,593 - main - INFO - Hotkeys initialized successfully!
+2025-07-13 01:12:35,593 - main - INFO - Available hotkeys:
+2025-07-13 01:12:35,593 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-13 01:12:35,593 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-13 01:12:35,600 - main - INFO - Found 1 overdue flashcards on startup, triggering review
+2025-07-13 01:12:35,672 - main - INFO - Drip application initialized successfully
+2025-07-13 01:12:35,673 - main - INFO - Starting Drip application
+2025-07-13 01:12:38,758 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 01:12:38,761 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:12:38,818 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-13 01:12:56,823 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-13 01:12:56,823 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:12:56,823 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:12:56,923 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: TIMEOUT
+2025-07-13 01:12:56,930 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-13 01:12:56,930 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 15 minutes
+2025-07-13 01:12:56,930 - main - INFO - Automatic review session completed
+2025-07-13 01:12:56,934 - main - INFO - Found overdue flashcards, triggering review with delay
+2025-07-13 01:12:59,791 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 01:12:59,791 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 01:12:59,791 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 01:12:59,791 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:12:59,792 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 01:12:59,793 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:12:59,795 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-13 01:13:05,121 - main - INFO - Shutting down Drip application
+2025-07-13 01:25:41,163 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-13 01:25:41,215 - main - INFO - System tray icon created successfully
+2025-07-13 01:25:41,216 - main - INFO - Hotkeys initialized successfully!
+2025-07-13 01:25:41,216 - main - INFO - Available hotkeys:
+2025-07-13 01:25:41,216 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-13 01:25:41,217 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-13 01:25:41,222 - main - INFO - Found 1 overdue flashcards on startup, triggering review
+2025-07-13 01:25:41,304 - main - INFO - Drip application initialized successfully
+2025-07-13 01:25:41,304 - main - INFO - Starting Drip application
+2025-07-13 01:25:44,283 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 01:25:44,285 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:25:44,342 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-13 01:26:01,835 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-13 01:26:01,835 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:26:01,835 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:26:01,935 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: TIMEOUT
+2025-07-13 01:26:01,943 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-13 01:26:01,943 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 01:26:01,943 - main - INFO - Automatic review session completed
+2025-07-13 01:26:01,944 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 01:31:01,816 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 01:31:01,817 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 01:31:01,818 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 01:31:01,818 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 01:31:01,818 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 01:31:01,820 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:31:01,823 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 01:31:16,861 - reviewer_module - INFO - Marking flashcard 9 (go) as TIMEOUT due to early exit
+2025-07-13 01:31:16,862 - reviewer_module - INFO - Marking flashcard 10 (wait) as TIMEOUT due to early exit
+2025-07-13 01:31:16,862 - reviewer_module - INFO - Marking flashcard 11 (width) as TIMEOUT due to early exit
+2025-07-13 01:31:16,862 - reviewer_module - INFO - Marking flashcard 12 (height) as TIMEOUT due to early exit
+2025-07-13 01:31:19,776 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 01:31:19,776 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 01:31:19,776 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:31:19,876 - reviewer_schedule_maker - INFO - Updating flashcard 8 with result: TIMEOUT
+2025-07-13 01:31:19,884 - reviewer_schedule_maker - INFO - Updating flashcard 9 with result: TIMEOUT
+2025-07-13 01:31:19,890 - reviewer_schedule_maker - INFO - Updating flashcard 10 with result: TIMEOUT
+2025-07-13 01:31:19,896 - reviewer_schedule_maker - INFO - Updating flashcard 11 with result: TIMEOUT
+2025-07-13 01:31:19,902 - reviewer_schedule_maker - INFO - Updating flashcard 12 with result: TIMEOUT
+2025-07-13 01:31:19,909 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 01:31:19,909 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 01:31:19,909 - main - INFO - Automatic review session completed
+2025-07-13 01:31:19,910 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 01:36:19,780 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 01:36:19,781 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 01:36:19,782 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 01:36:19,782 - reviewer_module - INFO - Marking flashcard 9 (go) as TIMEOUT due to early exit
+2025-07-13 01:36:19,782 - reviewer_module - INFO - Marking flashcard 10 (wait) as TIMEOUT due to early exit
+2025-07-13 01:36:19,782 - reviewer_module - INFO - Marking flashcard 11 (width) as TIMEOUT due to early exit
+2025-07-13 01:36:19,782 - reviewer_module - INFO - Marking flashcard 12 (height) as TIMEOUT due to early exit
+2025-07-13 01:36:19,782 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 01:36:19,782 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 01:36:19,784 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:36:19,788 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 01:36:34,842 - reviewer_module - INFO - Marking flashcard 14 (tall) as TIMEOUT due to early exit
+2025-07-13 01:36:34,842 - reviewer_module - INFO - Marking flashcard 15 (fast) as TIMEOUT due to early exit
+2025-07-13 01:36:34,843 - reviewer_module - INFO - Marking flashcard 16 (slow) as TIMEOUT due to early exit
+2025-07-13 01:36:34,843 - reviewer_module - INFO - Marking flashcard 7 (run) as TIMEOUT due to early exit
+2025-07-13 01:36:37,858 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 01:36:37,859 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 01:36:37,859 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:36:37,959 - reviewer_schedule_maker - INFO - Updating flashcard 13 with result: TIMEOUT
+2025-07-13 01:36:37,966 - reviewer_schedule_maker - INFO - Updating flashcard 14 with result: TIMEOUT
+2025-07-13 01:36:37,972 - reviewer_schedule_maker - INFO - Updating flashcard 15 with result: TIMEOUT
+2025-07-13 01:36:37,978 - reviewer_schedule_maker - INFO - Updating flashcard 16 with result: TIMEOUT
+2025-07-13 01:36:37,983 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: TIMEOUT
+2025-07-13 01:36:37,989 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 01:36:37,989 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 01:36:37,989 - main - INFO - Automatic review session completed
+2025-07-13 01:36:37,989 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 01:41:37,799 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 01:41:37,801 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 01:41:37,801 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 01:41:37,801 - reviewer_module - INFO - Marking flashcard 14 (tall) as TIMEOUT due to early exit
+2025-07-13 01:41:37,801 - reviewer_module - INFO - Marking flashcard 15 (fast) as TIMEOUT due to early exit
+2025-07-13 01:41:37,801 - reviewer_module - INFO - Marking flashcard 16 (slow) as TIMEOUT due to early exit
+2025-07-13 01:41:37,801 - reviewer_module - INFO - Marking flashcard 7 (run) as TIMEOUT due to early exit
+2025-07-13 01:41:37,801 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 01:41:37,801 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 01:41:37,803 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:41:37,806 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 01:41:52,869 - reviewer_module - INFO - Marking flashcard 9 (go) as TIMEOUT due to early exit
+2025-07-13 01:41:52,869 - reviewer_module - INFO - Marking flashcard 10 (wait) as TIMEOUT due to early exit
+2025-07-13 01:41:52,869 - reviewer_module - INFO - Marking flashcard 11 (width) as TIMEOUT due to early exit
+2025-07-13 01:41:52,869 - reviewer_module - INFO - Marking flashcard 12 (height) as TIMEOUT due to early exit
+2025-07-13 01:41:55,786 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 01:41:55,786 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 01:41:55,786 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:41:55,886 - reviewer_schedule_maker - INFO - Updating flashcard 8 with result: TIMEOUT
+2025-07-13 01:41:55,894 - reviewer_schedule_maker - INFO - Updating flashcard 9 with result: TIMEOUT
+2025-07-13 01:41:55,900 - reviewer_schedule_maker - INFO - Updating flashcard 10 with result: TIMEOUT
+2025-07-13 01:41:55,906 - reviewer_schedule_maker - INFO - Updating flashcard 11 with result: TIMEOUT
+2025-07-13 01:41:55,913 - reviewer_schedule_maker - INFO - Updating flashcard 12 with result: TIMEOUT
+2025-07-13 01:41:55,919 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 01:41:55,919 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 01:41:55,919 - main - INFO - Automatic review session completed
+2025-07-13 01:41:55,919 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 01:46:55,783 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 01:46:55,784 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 01:46:55,784 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 01:46:55,784 - reviewer_module - INFO - Marking flashcard 9 (go) as TIMEOUT due to early exit
+2025-07-13 01:46:55,784 - reviewer_module - INFO - Marking flashcard 10 (wait) as TIMEOUT due to early exit
+2025-07-13 01:46:55,784 - reviewer_module - INFO - Marking flashcard 11 (width) as TIMEOUT due to early exit
+2025-07-13 01:46:55,784 - reviewer_module - INFO - Marking flashcard 12 (height) as TIMEOUT due to early exit
+2025-07-13 01:46:55,784 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 01:46:55,785 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 01:46:55,786 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:46:55,790 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 01:47:10,830 - reviewer_module - INFO - Marking flashcard 14 (tall) as TIMEOUT due to early exit
+2025-07-13 01:47:10,830 - reviewer_module - INFO - Marking flashcard 15 (fast) as TIMEOUT due to early exit
+2025-07-13 01:47:10,830 - reviewer_module - INFO - Marking flashcard 16 (slow) as TIMEOUT due to early exit
+2025-07-13 01:47:10,830 - reviewer_module - INFO - Marking flashcard 7 (run) as TIMEOUT due to early exit
+2025-07-13 01:47:13,840 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 01:47:13,841 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 01:47:13,841 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:47:13,941 - reviewer_schedule_maker - INFO - Updating flashcard 13 with result: TIMEOUT
+2025-07-13 01:47:13,947 - reviewer_schedule_maker - INFO - Updating flashcard 14 with result: TIMEOUT
+2025-07-13 01:47:13,952 - reviewer_schedule_maker - INFO - Updating flashcard 15 with result: TIMEOUT
+2025-07-13 01:47:13,958 - reviewer_schedule_maker - INFO - Updating flashcard 16 with result: TIMEOUT
+2025-07-13 01:47:13,965 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: TIMEOUT
+2025-07-13 01:47:13,970 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 01:47:13,971 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 01:47:13,971 - main - INFO - Automatic review session completed
+2025-07-13 01:47:13,971 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 01:49:20,357 - main - INFO - Shutting down Drip application
+2025-07-13 01:49:29,023 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-13 01:49:29,084 - main - INFO - System tray icon created successfully
+2025-07-13 01:49:29,084 - main - INFO - Hotkeys initialized successfully!
+2025-07-13 01:49:29,085 - main - INFO - Available hotkeys:
+2025-07-13 01:49:29,085 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-13 01:49:29,085 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-13 01:49:29,091 - main - INFO - No overdue flashcards on startup
+2025-07-13 01:49:29,092 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 01:49:29,177 - main - INFO - Drip application initialized successfully
+2025-07-13 01:49:29,178 - main - INFO - Starting Drip application
+2025-07-13 01:49:49,901 - main - INFO - Shutting down Drip application
+2025-07-13 01:58:31,143 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-13 01:58:31,198 - main - INFO - System tray icon created successfully
+2025-07-13 01:58:31,198 - main - INFO - Hotkeys initialized successfully!
+2025-07-13 01:58:31,198 - main - INFO - Available hotkeys:
+2025-07-13 01:58:31,199 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-13 01:58:31,199 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-13 01:58:31,205 - main - INFO - Found 1 overdue flashcards on startup, triggering review
+2025-07-13 01:58:31,272 - main - INFO - Drip application initialized successfully
+2025-07-13 01:58:31,272 - main - INFO - Starting Drip application
+2025-07-13 01:58:34,283 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 01:58:34,287 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 01:58:34,339 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 01:58:48,797 - reviewer_module - INFO - Marking flashcard 9 (go) as TIMEOUT due to early exit
+2025-07-13 01:58:48,797 - reviewer_module - INFO - Marking flashcard 10 (wait) as TIMEOUT due to early exit
+2025-07-13 01:58:48,798 - reviewer_module - INFO - Marking flashcard 11 (width) as TIMEOUT due to early exit
+2025-07-13 01:58:48,798 - reviewer_module - INFO - Marking flashcard 12 (height) as TIMEOUT due to early exit
+2025-07-13 01:58:51,839 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 01:58:51,840 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 01:58:51,840 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 01:58:51,940 - reviewer_schedule_maker - INFO - Updating flashcard 8 with result: TIMEOUT
+2025-07-13 01:58:51,947 - reviewer_schedule_maker - INFO - Updating flashcard 9 with result: TIMEOUT
+2025-07-13 01:58:51,954 - reviewer_schedule_maker - INFO - Updating flashcard 10 with result: TIMEOUT
+2025-07-13 01:58:51,960 - reviewer_schedule_maker - INFO - Updating flashcard 11 with result: TIMEOUT
+2025-07-13 01:58:51,965 - reviewer_schedule_maker - INFO - Updating flashcard 12 with result: TIMEOUT
+2025-07-13 01:58:51,971 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 01:58:51,971 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 3 minutes
+2025-07-13 01:58:51,971 - main - INFO - Automatic review session completed
+2025-07-13 01:58:51,972 - main - INFO - Next review scheduled in 3 minutes
+2025-07-13 02:01:51,804 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 02:01:51,805 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 02:01:51,805 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 02:01:51,805 - reviewer_module - INFO - Marking flashcard 9 (go) as TIMEOUT due to early exit
+2025-07-13 02:01:51,805 - reviewer_module - INFO - Marking flashcard 10 (wait) as TIMEOUT due to early exit
+2025-07-13 02:01:51,805 - reviewer_module - INFO - Marking flashcard 11 (width) as TIMEOUT due to early exit
+2025-07-13 02:01:51,805 - reviewer_module - INFO - Marking flashcard 12 (height) as TIMEOUT due to early exit
+2025-07-13 02:01:51,805 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 02:01:51,806 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 02:01:51,807 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 02:01:51,811 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 02:02:27,814 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 02:02:27,814 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 02:02:27,814 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 02:02:27,915 - reviewer_schedule_maker - INFO - Updating flashcard 8 with result: True
+2025-07-13 02:02:27,923 - reviewer_schedule_maker - INFO - Updating flashcard 9 with result: True
+2025-07-13 02:02:27,930 - reviewer_schedule_maker - INFO - Updating flashcard 10 with result: True
+2025-07-13 02:02:27,937 - reviewer_schedule_maker - INFO - Updating flashcard 11 with result: True
+2025-07-13 02:02:27,942 - reviewer_schedule_maker - INFO - Updating flashcard 12 with result: True
+2025-07-13 02:02:27,948 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 02:02:27,948 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 02:02:27,948 - main - INFO - Automatic review session completed
+2025-07-13 02:02:27,948 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 02:07:27,810 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 02:07:27,811 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 02:07:27,811 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 02:07:27,811 - reviewer_module - INFO - Marking flashcard 9 (go) as TIMEOUT due to early exit
+2025-07-13 02:07:27,811 - reviewer_module - INFO - Marking flashcard 10 (wait) as TIMEOUT due to early exit
+2025-07-13 02:07:27,812 - reviewer_module - INFO - Marking flashcard 11 (width) as TIMEOUT due to early exit
+2025-07-13 02:07:27,812 - reviewer_module - INFO - Marking flashcard 12 (height) as TIMEOUT due to early exit
+2025-07-13 02:07:27,812 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 02:07:27,812 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 02:07:27,814 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 02:07:27,818 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 02:07:42,853 - reviewer_module - INFO - Marking flashcard 14 (tall) as TIMEOUT due to early exit
+2025-07-13 02:07:42,854 - reviewer_module - INFO - Marking flashcard 15 (fast) as TIMEOUT due to early exit
+2025-07-13 02:07:42,854 - reviewer_module - INFO - Marking flashcard 16 (slow) as TIMEOUT due to early exit
+2025-07-13 02:07:42,854 - reviewer_module - INFO - Marking flashcard 7 (run) as TIMEOUT due to early exit
+2025-07-13 02:07:45,864 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 02:07:45,865 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 02:07:45,865 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 02:07:45,965 - reviewer_schedule_maker - INFO - Updating flashcard 13 with result: TIMEOUT
+2025-07-13 02:07:45,972 - reviewer_schedule_maker - INFO - Updating flashcard 14 with result: TIMEOUT
+2025-07-13 02:07:45,982 - reviewer_schedule_maker - INFO - Updating flashcard 15 with result: TIMEOUT
+2025-07-13 02:07:45,988 - reviewer_schedule_maker - INFO - Updating flashcard 16 with result: TIMEOUT
+2025-07-13 02:07:45,996 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: TIMEOUT
+2025-07-13 02:07:46,001 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 02:07:46,002 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 02:07:46,002 - main - INFO - Automatic review session completed
+2025-07-13 02:07:46,002 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 02:12:45,815 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 02:12:45,816 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 02:12:45,816 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 02:12:45,816 - reviewer_module - INFO - Marking flashcard 14 (tall) as TIMEOUT due to early exit
+2025-07-13 02:12:45,816 - reviewer_module - INFO - Marking flashcard 15 (fast) as TIMEOUT due to early exit
+2025-07-13 02:12:45,816 - reviewer_module - INFO - Marking flashcard 16 (slow) as TIMEOUT due to early exit
+2025-07-13 02:12:45,816 - reviewer_module - INFO - Marking flashcard 7 (run) as TIMEOUT due to early exit
+2025-07-13 02:12:45,817 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 02:12:45,817 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 02:12:45,818 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 02:12:45,821 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 02:13:22,309 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 02:13:22,310 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 02:13:22,310 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 02:13:22,410 - reviewer_schedule_maker - INFO - Updating flashcard 13 with result: True
+2025-07-13 02:13:22,417 - reviewer_schedule_maker - INFO - Updating flashcard 14 with result: True
+2025-07-13 02:13:22,423 - reviewer_schedule_maker - INFO - Updating flashcard 15 with result: True
+2025-07-13 02:13:22,429 - reviewer_schedule_maker - INFO - Updating flashcard 16 with result: False
+2025-07-13 02:13:22,435 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: False
+2025-07-13 02:13:22,441 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 02:13:22,441 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 59 minutes
+2025-07-13 02:13:22,441 - main - INFO - Automatic review session completed
+2025-07-13 02:13:22,442 - main - INFO - Next review scheduled in 59 minutes
+2025-07-13 02:23:17,780 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 02:23:17,781 - main - INFO - No flashcards due for review
+2025-07-13 02:23:21,772 - main - INFO - Shutting down Drip application
+2025-07-13 02:27:17,132 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-13 02:27:17,188 - main - INFO - System tray icon created successfully
+2025-07-13 02:27:17,189 - main - INFO - Hotkeys initialized successfully!
+2025-07-13 02:27:17,189 - main - INFO - Available hotkeys:
+2025-07-13 02:27:17,189 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-13 02:27:17,189 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-13 02:27:17,195 - main - INFO - No overdue flashcards on startup
+2025-07-13 02:27:17,196 - main - INFO - Next review scheduled in 46 minutes
+2025-07-13 02:27:17,268 - main - INFO - Drip application initialized successfully
+2025-07-13 02:27:17,268 - main - INFO - Starting Drip application
+2025-07-13 02:58:34,123 - main - INFO - Shutting down Drip application
+2025-07-13 21:37:40,915 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-13 21:37:41,019 - main - INFO - System tray icon created successfully
+2025-07-13 21:37:41,020 - main - INFO - Hotkeys initialized successfully!
+2025-07-13 21:37:41,020 - main - INFO - Available hotkeys:
+2025-07-13 21:37:41,020 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-13 21:37:41,020 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-13 21:37:41,026 - main - INFO - Found 1 overdue flashcards on startup, triggering review
+2025-07-13 21:37:41,121 - main - INFO - Drip application initialized successfully
+2025-07-13 21:37:41,121 - main - INFO - Starting Drip application
+2025-07-13 21:37:44,186 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 21:37:44,203 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 21:37:44,267 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 21:38:08,266 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 21:38:08,267 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 21:38:08,267 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 21:38:08,367 - reviewer_schedule_maker - INFO - Updating flashcard 16 with result: True
+2025-07-13 21:38:08,374 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: True
+2025-07-13 21:38:08,379 - reviewer_schedule_maker - INFO - Updating flashcard 3 with result: True
+2025-07-13 21:38:08,385 - reviewer_schedule_maker - INFO - Updating flashcard 4 with result: True
+2025-07-13 21:38:08,391 - reviewer_schedule_maker - INFO - Updating flashcard 5 with result: True
+2025-07-13 21:38:08,396 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 21:38:08,397 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 3 minutes
+2025-07-13 21:38:08,397 - main - INFO - Automatic review session completed
+2025-07-13 21:38:08,397 - main - INFO - Next review scheduled in 3 minutes
+2025-07-13 21:41:08,301 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 21:41:08,302 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 21:41:08,303 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 21:41:08,303 - reviewer_module - INFO - Marking flashcard 7 (run) as TIMEOUT due to early exit
+2025-07-13 21:41:08,303 - reviewer_module - INFO - Marking flashcard 3 (model) as TIMEOUT due to early exit
+2025-07-13 21:41:08,303 - reviewer_module - INFO - Marking flashcard 4 (Training) as TIMEOUT due to early exit
+2025-07-13 21:41:08,303 - reviewer_module - INFO - Marking flashcard 5 (Dataset) as TIMEOUT due to early exit
+2025-07-13 21:41:08,303 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 21:41:08,303 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 21:41:08,305 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 21:41:08,309 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 21:41:34,810 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 21:41:34,810 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 21:41:34,810 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 21:41:34,911 - reviewer_schedule_maker - INFO - Updating flashcard 6 with result: True
+2025-07-13 21:41:34,918 - reviewer_schedule_maker - INFO - Updating flashcard 1 with result: True
+2025-07-13 21:41:34,925 - reviewer_schedule_maker - INFO - Updating flashcard 2 with result: True
+2025-07-13 21:41:34,932 - reviewer_schedule_maker - INFO - Updating flashcard 8 with result: True
+2025-07-13 21:41:34,939 - reviewer_schedule_maker - INFO - Updating flashcard 9 with result: True
+2025-07-13 21:41:34,947 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 21:41:34,947 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 3 minutes
+2025-07-13 21:41:34,947 - main - INFO - Automatic review session completed
+2025-07-13 21:41:34,948 - main - INFO - Next review scheduled in 3 minutes
+2025-07-13 21:44:35,234 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-13 21:44:35,236 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 21:44:35,236 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 21:44:35,236 - reviewer_module - INFO - Marking flashcard 1 (periodically) as TIMEOUT due to early exit
+2025-07-13 21:44:35,236 - reviewer_module - INFO - Marking flashcard 2 (propose) as TIMEOUT due to early exit
+2025-07-13 21:44:35,236 - reviewer_module - INFO - Marking flashcard 8 (eat) as TIMEOUT due to early exit
+2025-07-13 21:44:35,236 - reviewer_module - INFO - Marking flashcard 9 (go) as TIMEOUT due to early exit
+2025-07-13 21:44:35,237 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 21:44:35,237 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 21:44:35,238 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 21:44:35,242 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-13 21:44:58,248 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-13 21:44:58,251 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 21:44:58,251 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 21:44:58,351 - reviewer_schedule_maker - INFO - Updating flashcard 10 with result: True
+2025-07-13 21:44:58,357 - reviewer_schedule_maker - INFO - Updating flashcard 11 with result: True
+2025-07-13 21:44:58,363 - reviewer_schedule_maker - INFO - Updating flashcard 12 with result: True
+2025-07-13 21:44:58,369 - reviewer_schedule_maker - INFO - Updating flashcard 13 with result: True
+2025-07-13 21:44:58,375 - reviewer_schedule_maker - INFO - Updating flashcard 14 with result: True
+2025-07-13 21:44:58,382 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-13 21:44:58,383 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-13 21:44:58,383 - main - INFO - Automatic review session completed
+2025-07-13 21:44:58,383 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 21:49:58,331 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 21:49:58,332 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-13 21:49:58,332 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-13 21:49:58,332 - reviewer_module - INFO - Marking flashcard 11 (width) as TIMEOUT due to early exit
+2025-07-13 21:49:58,332 - reviewer_module - INFO - Marking flashcard 12 (height) as TIMEOUT due to early exit
+2025-07-13 21:49:58,332 - reviewer_module - INFO - Marking flashcard 13 (weight) as TIMEOUT due to early exit
+2025-07-13 21:49:58,332 - reviewer_module - INFO - Marking flashcard 14 (tall) as TIMEOUT due to early exit
+2025-07-13 21:49:58,332 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-13 21:49:58,333 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-13 21:49:58,334 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 21:49:58,338 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-13 21:50:08,778 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-13 21:50:08,781 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-13 21:50:08,781 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 21:50:08,882 - reviewer_schedule_maker - INFO - Updating flashcard 15 with result: True
+2025-07-13 21:50:08,888 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-13 21:50:08,889 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 60 minutes
+2025-07-13 21:50:08,889 - main - INFO - Automatic review session completed
+2025-07-13 21:50:08,889 - main - INFO - Next review scheduled in 60 minutes
+2025-07-13 22:05:35,535 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-13 22:05:35,535 - main - INFO - Opening create flashcard window...
+2025-07-13 22:05:35,603 - main - INFO - Create flashcard window opened successfully
+2025-07-13 22:43:50,489 - main - INFO - Ctrl+Space detected - Opening create flashcard
+2025-07-13 22:43:50,489 - main - INFO - Opening create flashcard window...
+2025-07-13 22:43:50,503 - main - INFO - Create flashcard window opened successfully
+2025-07-13 22:44:51,448 - create_new_flashcard - INFO - Flashcard created successfully with ID: 17
+2025-07-13 22:46:16,288 - create_new_flashcard - INFO - Flashcard created successfully with ID: 18
+2025-07-13 22:46:22,341 - main - INFO - Shutting down Drip application
+2025-07-13 22:46:25,497 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-13 22:46:25,553 - main - INFO - System tray icon created successfully
+2025-07-13 22:46:25,553 - main - INFO - Hotkeys initialized successfully!
+2025-07-13 22:46:25,554 - main - INFO - Available hotkeys:
+2025-07-13 22:46:25,554 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-13 22:46:25,554 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-13 22:46:25,559 - main - INFO - No overdue flashcards on startup
+2025-07-13 22:46:25,560 - main - INFO - Next review scheduled in 28 minutes
+2025-07-13 22:46:25,655 - main - INFO - Drip application initialized successfully
+2025-07-13 22:46:25,655 - main - INFO - Starting Drip application
+2025-07-13 23:14:25,238 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 23:14:25,239 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 23:19:25,261 - reviewer_schedule_maker - INFO - Starting review session with 2 flashcards
+2025-07-13 23:19:25,335 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 2 flashcards
+2025-07-13 23:19:28,251 - pre_review_notification - INFO - User accepted review session
+2025-07-13 23:19:28,261 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-13 23:19:28,263 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-13 23:19:28,284 - reviewer_module - INFO - Started review session with 2 flashcards
+2025-07-13 23:19:39,745 - reviewer_module - INFO - Review session completed with 2 results
+2025-07-13 23:19:39,745 - reviewer_schedule_maker - INFO - Review completed with 2 results
+2025-07-13 23:19:39,745 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-13 23:19:39,945 - reviewer_schedule_maker - INFO - Updating flashcard 17 with result: True
+2025-07-13 23:19:39,953 - reviewer_schedule_maker - INFO - Updating flashcard 18 with result: TIMEOUT
+2025-07-13 23:19:39,959 - reviewer_schedule_maker - INFO - Updated 2 flashcards with review results
+2025-07-13 23:19:39,959 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 29 minutes
+2025-07-13 23:19:39,959 - main - INFO - Automatic review session completed
+2025-07-13 23:19:39,960 - main - INFO - Next review scheduled in 29 minutes
+2025-07-13 23:48:40,260 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-13 23:48:40,261 - main - INFO - Next review scheduled in 5 minutes
+2025-07-13 23:53:40,326 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-13 23:53:40,326 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-13 23:53:40,333 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 1 flashcards
+2025-07-13 23:53:45,260 - pre_review_notification - INFO - Pre-review notification timed out
+2025-07-13 23:53:45,261 - pre_review_notification - INFO - User declined review session
+2025-07-13 23:53:45,264 - reviewer_schedule_maker - INFO - User declined review or notification timed out
+2025-07-13 23:53:45,365 - reviewer_schedule_maker - INFO - Updating flashcard 18 with result: TIMEOUT
+2025-07-13 23:53:45,371 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-13 23:53:45,371 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 25 minutes
+2025-07-13 23:53:45,371 - main - INFO - Automatic review session completed
+2025-07-13 23:53:45,372 - main - INFO - Next review scheduled in 25 minutes
+2025-07-14 00:18:45,232 - reviewer_schedule_maker - INFO - No flashcards due for review
+2025-07-14 00:18:45,232 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 00:23:45,241 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-14 00:23:45,241 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 00:23:45,248 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 1 flashcards
+2025-07-14 00:23:49,469 - pre_review_notification - INFO - User accepted review session
+2025-07-14 00:23:49,477 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 00:23:49,477 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-14 00:23:49,477 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-14 00:23:49,478 - reviewer_module - INFO - Marking flashcard 18 (update) as TIMEOUT due to early exit
+2025-07-14 00:23:49,478 - reviewer_schedule_maker - INFO - Review completed with 2 results
+2025-07-14 00:23:49,478 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-14 00:23:49,492 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 00:23:49,501 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-14 00:23:56,747 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-14 00:23:56,747 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-14 00:23:56,747 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 00:23:56,948 - reviewer_schedule_maker - INFO - Updating flashcard 17 with result: True
+2025-07-14 00:23:56,954 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-14 00:23:56,954 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 00:23:56,955 - main - INFO - Automatic review session completed
+2025-07-14 00:23:56,955 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 00:25:16,352 - main - INFO - Shutting down Drip application
+2025-07-14 00:25:18,259 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-14 00:25:18,313 - main - INFO - System tray icon created successfully
+2025-07-14 00:25:18,314 - main - INFO - Hotkeys initialized successfully!
+2025-07-14 00:25:18,314 - main - INFO - Available hotkeys:
+2025-07-14 00:25:18,314 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-14 00:25:18,314 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-14 00:25:18,321 - main - INFO - Found 1 overdue flashcards on startup, triggering review
+2025-07-14 00:25:18,393 - main - INFO - Drip application initialized successfully
+2025-07-14 00:25:18,393 - main - INFO - Starting Drip application
+2025-07-14 00:25:21,234 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-14 00:25:21,304 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 1 flashcards
+2025-07-14 00:25:25,025 - pre_review_notification - INFO - User accepted review session
+2025-07-14 00:25:25,029 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 00:25:25,031 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 00:25:25,054 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-14 00:25:33,214 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-14 00:25:33,214 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-14 00:25:33,214 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 00:25:33,415 - reviewer_schedule_maker - INFO - Updating flashcard 18 with result: True
+2025-07-14 00:25:33,421 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-14 00:25:33,422 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 59 minutes
+2025-07-14 00:25:33,422 - main - INFO - Automatic review session completed
+2025-07-14 00:25:33,422 - main - INFO - Next review scheduled in 59 minutes
+2025-07-14 00:32:00,715 - main - INFO - Shutting down Drip application
+2025-07-14 00:34:28,684 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-14 00:34:28,738 - main - INFO - System tray icon created successfully
+2025-07-14 00:34:28,739 - main - INFO - Hotkeys initialized successfully!
+2025-07-14 00:34:28,739 - main - INFO - Available hotkeys:
+2025-07-14 00:34:28,739 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-14 00:34:28,739 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-14 00:34:28,745 - main - INFO - Found 1 overdue flashcards on startup, triggering review
+2025-07-14 00:34:28,832 - main - INFO - Drip application initialized successfully
+2025-07-14 00:34:28,832 - main - INFO - Starting Drip application
+2025-07-14 00:34:31,736 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-14 00:34:31,796 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 5 flashcards
+2025-07-14 00:34:35,115 - pre_review_notification - INFO - User accepted review session
+2025-07-14 00:34:35,119 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 00:34:35,120 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 00:34:35,158 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-14 00:34:57,812 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-14 00:34:57,821 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-14 00:34:57,822 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 00:34:58,022 - reviewer_schedule_maker - INFO - Updating flashcard 28 with result: True
+2025-07-14 00:34:58,029 - reviewer_schedule_maker - INFO - Updating flashcard 27 with result: True
+2025-07-14 00:34:58,034 - reviewer_schedule_maker - INFO - Updating flashcard 26 with result: True
+2025-07-14 00:34:58,040 - reviewer_schedule_maker - INFO - Updating flashcard 25 with result: True
+2025-07-14 00:34:58,046 - reviewer_schedule_maker - INFO - Updating flashcard 24 with result: True
+2025-07-14 00:34:58,052 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-14 00:34:58,052 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 00:34:58,052 - main - INFO - Automatic review session completed
+2025-07-14 00:34:58,052 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 00:39:01,845 - main - INFO - Settings window not implemented yet
+2025-07-14 00:39:15,828 - main - INFO - Opening create flashcard window...
+2025-07-14 00:39:15,886 - main - INFO - Create flashcard window opened successfully
+2025-07-14 00:39:21,634 - main - INFO - Statistics window not implemented yet
+2025-07-14 00:39:58,243 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-14 00:39:58,243 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 00:39:58,249 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 5 flashcards
+2025-07-14 00:40:02,169 - pre_review_notification - INFO - User accepted review session
+2025-07-14 00:40:02,172 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 00:40:02,173 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-14 00:40:02,173 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-14 00:40:02,173 - reviewer_module - INFO - Marking flashcard 27 (regularization) as TIMEOUT due to early exit
+2025-07-14 00:40:02,173 - reviewer_module - INFO - Marking flashcard 26 (hyperparameter) as TIMEOUT due to early exit
+2025-07-14 00:40:02,173 - reviewer_module - INFO - Marking flashcard 25 (overfitting) as TIMEOUT due to early exit
+2025-07-14 00:40:02,173 - reviewer_module - INFO - Marking flashcard 24 (backpropagation) as TIMEOUT due to early exit
+2025-07-14 00:40:02,173 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-14 00:40:02,173 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-14 00:40:02,176 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 00:40:02,180 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-14 00:40:13,445 - reviewer_module - INFO - Marking flashcard 20 (neural) as TIMEOUT due to early exit
+2025-07-14 00:40:13,445 - reviewer_module - INFO - Marking flashcard 19 (algorithm) as TIMEOUT due to early exit
+2025-07-14 00:40:16,358 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-14 00:40:16,358 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-14 00:40:16,358 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 00:40:16,559 - reviewer_schedule_maker - INFO - Updating flashcard 23 with result: True
+2025-07-14 00:40:16,566 - reviewer_schedule_maker - INFO - Updating flashcard 22 with result: True
+2025-07-14 00:40:16,572 - reviewer_schedule_maker - INFO - Updating flashcard 21 with result: TIMEOUT
+2025-07-14 00:40:16,578 - reviewer_schedule_maker - INFO - Updating flashcard 20 with result: TIMEOUT
+2025-07-14 00:40:16,583 - reviewer_schedule_maker - INFO - Updating flashcard 19 with result: TIMEOUT
+2025-07-14 00:40:16,589 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-14 00:40:16,589 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 00:40:16,589 - main - INFO - Automatic review session completed
+2025-07-14 00:40:16,590 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 00:45:16,236 - reviewer_schedule_maker - INFO - Starting review session with 3 flashcards
+2025-07-14 00:45:16,237 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 00:45:16,243 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 3 flashcards
+2025-07-14 00:45:19,760 - pre_review_notification - INFO - User accepted review session
+2025-07-14 00:45:19,774 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 00:45:19,774 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-14 00:45:19,774 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-14 00:45:19,774 - reviewer_module - INFO - Marking flashcard 22 (embedding) as TIMEOUT due to early exit
+2025-07-14 00:45:19,774 - reviewer_module - INFO - Marking flashcard 21 (transformer) as TIMEOUT due to early exit
+2025-07-14 00:45:19,774 - reviewer_module - INFO - Marking flashcard 20 (neural) as TIMEOUT due to early exit
+2025-07-14 00:45:19,774 - reviewer_module - INFO - Marking flashcard 19 (algorithm) as TIMEOUT due to early exit
+2025-07-14 00:45:19,775 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-14 00:45:19,775 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-14 00:45:19,789 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 00:45:19,803 - reviewer_module - INFO - Started review session with 3 flashcards
+2025-07-14 00:45:25,124 - reviewer_module - INFO - Marking flashcard 20 (neural) as TIMEOUT due to early exit
+2025-07-14 00:45:25,124 - reviewer_module - INFO - Marking flashcard 19 (algorithm) as TIMEOUT due to early exit
+2025-07-14 00:45:28,239 - reviewer_module - INFO - Review session completed with 3 results
+2025-07-14 00:45:28,239 - reviewer_schedule_maker - INFO - Review completed with 3 results
+2025-07-14 00:45:28,239 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 00:45:28,440 - reviewer_schedule_maker - INFO - Updating flashcard 21 with result: TIMEOUT
+2025-07-14 00:45:28,446 - reviewer_schedule_maker - INFO - Updating flashcard 20 with result: TIMEOUT
+2025-07-14 00:45:28,452 - reviewer_schedule_maker - INFO - Updating flashcard 19 with result: TIMEOUT
+2025-07-14 00:45:28,490 - reviewer_schedule_maker - INFO - Updated 3 flashcards with review results
+2025-07-14 00:45:28,490 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 00:45:28,491 - main - INFO - Automatic review session completed
+2025-07-14 00:45:28,491 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 00:50:28,231 - reviewer_schedule_maker - INFO - Starting review session with 3 flashcards
+2025-07-14 00:50:28,231 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 00:50:28,236 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 3 flashcards
+2025-07-14 00:50:33,255 - pre_review_notification - INFO - Pre-review notification timed out
+2025-07-14 00:50:33,256 - pre_review_notification - INFO - User declined review session
+2025-07-14 00:50:33,256 - reviewer_schedule_maker - INFO - User declined review or notification timed out
+2025-07-14 00:50:33,356 - reviewer_schedule_maker - INFO - Updating flashcard 21 with result: TIMEOUT
+2025-07-14 00:50:33,363 - reviewer_schedule_maker - INFO - Updating flashcard 20 with result: TIMEOUT
+2025-07-14 00:50:33,368 - reviewer_schedule_maker - INFO - Updating flashcard 19 with result: TIMEOUT
+2025-07-14 00:50:33,373 - reviewer_schedule_maker - INFO - Updated 3 flashcards with review results
+2025-07-14 00:50:33,373 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 00:50:33,373 - main - INFO - Automatic review session completed
+2025-07-14 00:50:33,374 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 00:55:33,232 - reviewer_schedule_maker - INFO - Starting review session with 3 flashcards
+2025-07-14 00:55:33,232 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 00:55:33,237 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 3 flashcards
+2025-07-14 00:55:36,449 - pre_review_notification - INFO - User accepted review session
+2025-07-14 00:55:36,456 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 00:55:36,456 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-14 00:55:36,456 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-14 00:55:36,457 - reviewer_module - INFO - Marking flashcard 20 (neural) as TIMEOUT due to early exit
+2025-07-14 00:55:36,457 - reviewer_module - INFO - Marking flashcard 19 (algorithm) as TIMEOUT due to early exit
+2025-07-14 00:55:36,457 - reviewer_schedule_maker - INFO - Review completed with 3 results
+2025-07-14 00:55:36,457 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-14 00:55:36,460 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 00:55:36,463 - reviewer_module - INFO - Started review session with 3 flashcards
+2025-07-14 00:55:49,805 - reviewer_module - INFO - Review session completed with 3 results
+2025-07-14 00:55:49,805 - reviewer_schedule_maker - INFO - Review completed with 3 results
+2025-07-14 00:55:49,805 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 00:55:50,006 - reviewer_schedule_maker - INFO - Updating flashcard 21 with result: True
+2025-07-14 00:55:50,012 - reviewer_schedule_maker - INFO - Updating flashcard 20 with result: True
+2025-07-14 00:55:50,019 - reviewer_schedule_maker - INFO - Updating flashcard 19 with result: True
+2025-07-14 00:55:50,024 - reviewer_schedule_maker - INFO - Updated 3 flashcards with review results
+2025-07-14 00:55:50,025 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 29 minutes
+2025-07-14 00:55:50,025 - main - INFO - Automatic review session completed
+2025-07-14 00:55:50,025 - main - INFO - Next review scheduled in 29 minutes
+2025-07-14 01:12:40,885 - main - INFO - Shutting down Drip application
+2025-07-14 01:15:23,298 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-14 01:15:23,332 - sound_manager - INFO - Loaded sound settings: enabled=True
+2025-07-14 01:15:23,404 - sound_manager - INFO - Using QMediaPlayer for MP3 sound: static/sound/DripSoud3.mp3
+2025-07-14 01:15:23,411 - main - INFO - System tray icon created successfully
+2025-07-14 01:15:23,412 - main - INFO - Hotkeys initialized successfully!
+2025-07-14 01:15:23,412 - main - INFO - Available hotkeys:
+2025-07-14 01:15:23,412 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-14 01:15:23,412 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-14 01:15:23,419 - main - INFO - No overdue flashcards on startup
+2025-07-14 01:15:23,419 - main - INFO - Next review scheduled in 10 minutes
+2025-07-14 01:15:23,512 - main - INFO - Drip application initialized successfully
+2025-07-14 01:15:23,512 - main - INFO - Starting Drip application
+2025-07-14 01:17:06,045 - settings_window - INFO - Sound notifications enabled
+2025-07-14 01:17:06,066 - settings_window - INFO - Settings window shown
+2025-07-14 01:17:20,689 - sound_manager - INFO - Test notification sound played
+2025-07-14 01:17:20,689 - settings_window - INFO - Played test notification sound
+2025-07-14 01:17:22,174 - sound_manager - INFO - Saved sound settings: enabled=False
+2025-07-14 01:17:22,174 - sound_manager - INFO - Sound notification disabled
+2025-07-14 01:17:22,174 - settings_window - INFO - Sound notifications disabled
+2025-07-14 01:17:22,174 - main - INFO - Settings have been updated
+2025-07-14 01:17:22,926 - sound_manager - INFO - Test notification sound played
+2025-07-14 01:17:22,926 - settings_window - INFO - Played test notification sound
+2025-07-14 01:17:27,872 - sound_manager - INFO - Test notification sound played
+2025-07-14 01:17:27,873 - settings_window - INFO - Played test notification sound
+2025-07-14 01:17:29,596 - sound_manager - INFO - Saved sound settings: enabled=True
+2025-07-14 01:17:29,597 - sound_manager - INFO - Sound notification enabled
+2025-07-14 01:17:29,597 - settings_window - INFO - Sound notifications enabled
+2025-07-14 01:17:29,597 - main - INFO - Settings have been updated
+2025-07-14 01:17:30,579 - sound_manager - INFO - Test notification sound played
+2025-07-14 01:17:30,579 - settings_window - INFO - Played test notification sound
+2025-07-14 01:17:31,579 - settings_window - INFO - Settings window closed
+2025-07-14 01:17:43,671 - settings_window - INFO - Settings window shown
+2025-07-14 01:17:44,479 - sound_manager - INFO - Test notification sound played
+2025-07-14 01:17:44,479 - settings_window - INFO - Played test notification sound
+2025-07-14 01:17:51,274 - sound_manager - INFO - Saved sound settings: enabled=False
+2025-07-14 01:17:51,275 - sound_manager - INFO - Sound notification disabled
+2025-07-14 01:17:51,275 - settings_window - INFO - Sound notifications disabled
+2025-07-14 01:17:51,275 - main - INFO - Settings have been updated
+2025-07-14 01:17:51,903 - sound_manager - INFO - Test notification sound played
+2025-07-14 01:17:51,903 - settings_window - INFO - Played test notification sound
+2025-07-14 01:17:53,567 - settings_window - INFO - Settings window closed
+2025-07-14 01:23:29,315 - main - INFO - Shutting down Drip application
+2025-07-14 01:23:29,315 - settings_window - INFO - Settings window closed
+2025-07-14 01:23:32,804 - __main__ - INFO - Starting Drip - Vocabulary Learning System
+2025-07-14 01:23:32,836 - sound_manager - INFO - Loaded sound settings: enabled=False
+2025-07-14 01:23:32,836 - sound_manager - INFO - Using notification sound: static/sound/DripSoud3.wav
+2025-07-14 01:23:32,843 - main - INFO - System tray icon created successfully
+2025-07-14 01:23:32,844 - main - INFO - Hotkeys initialized successfully!
+2025-07-14 01:23:32,844 - main - INFO - Available hotkeys:
+2025-07-14 01:23:32,844 - main - INFO -   Ctrl+Space: Create new flashcard
+2025-07-14 01:23:32,844 - main - INFO -   Ctrl+Shift+R: Start manual review
+2025-07-14 01:23:32,850 - main - INFO - No overdue flashcards on startup
+2025-07-14 01:23:32,851 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 01:23:32,943 - main - INFO - Drip application initialized successfully
+2025-07-14 01:23:32,943 - main - INFO - Starting Drip application
+2025-07-14 01:23:55,982 - settings_window - INFO - Settings window shown
+2025-07-14 01:23:59,516 - sound_manager - INFO - Saved sound settings: enabled=True
+2025-07-14 01:23:59,517 - sound_manager - INFO - Sound notification enabled
+2025-07-14 01:23:59,517 - settings_window - INFO - Sound notifications enabled
+2025-07-14 01:23:59,517 - main - INFO - Settings have been updated
+2025-07-14 01:24:03,596 - sound_manager - INFO - Saved sound settings: enabled=False
+2025-07-14 01:24:03,596 - sound_manager - INFO - Sound notification disabled
+2025-07-14 01:24:03,596 - settings_window - INFO - Sound notifications disabled
+2025-07-14 01:24:03,597 - main - INFO - Settings have been updated
+2025-07-14 01:24:20,622 - sound_manager - INFO - Saved sound settings: enabled=True
+2025-07-14 01:24:20,623 - sound_manager - INFO - Sound notification enabled
+2025-07-14 01:24:20,623 - settings_window - INFO - Sound notifications enabled
+2025-07-14 01:24:20,623 - main - INFO - Settings have been updated
+2025-07-14 01:24:29,175 - settings_window - INFO - Settings window closed
+2025-07-14 01:28:33,242 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-14 01:28:33,263 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 1 flashcards
+2025-07-14 01:28:35,878 - pre_review_notification - INFO - User accepted review session
+2025-07-14 01:28:35,882 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 01:28:35,883 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 01:28:35,903 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-14 01:28:53,267 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-14 01:28:53,267 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-14 01:28:53,267 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 01:28:53,468 - reviewer_schedule_maker - INFO - Updating flashcard 18 with result: TIMEOUT
+2025-07-14 01:28:53,475 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-14 01:28:53,475 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 01:28:53,475 - main - INFO - Automatic review session completed
+2025-07-14 01:28:53,475 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 01:33:53,253 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-14 01:33:53,253 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 01:33:53,259 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 1 flashcards
+2025-07-14 01:33:58,273 - pre_review_notification - INFO - Pre-review notification timed out
+2025-07-14 01:33:58,273 - pre_review_notification - INFO - User declined review session
+2025-07-14 01:33:58,274 - reviewer_schedule_maker - INFO - User declined review or notification timed out
+2025-07-14 01:33:58,374 - reviewer_schedule_maker - INFO - Updating flashcard 18 with result: TIMEOUT
+2025-07-14 01:33:58,381 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-14 01:33:58,381 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 01:33:58,381 - main - INFO - Automatic review session completed
+2025-07-14 01:33:58,382 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 01:38:58,263 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-14 01:38:58,265 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 01:38:58,271 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 5 flashcards
+2025-07-14 01:39:02,387 - pre_review_notification - INFO - User accepted review session
+2025-07-14 01:39:02,390 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 01:39:02,390 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-14 01:39:02,390 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-14 01:39:02,390 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-14 01:39:02,390 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-14 01:39:02,393 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 01:39:02,396 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-14 01:39:55,282 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-14 01:39:55,286 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-14 01:39:55,286 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 01:39:55,487 - reviewer_schedule_maker - INFO - Updating flashcard 18 with result: True
+2025-07-14 01:39:55,494 - reviewer_schedule_maker - INFO - Updating flashcard 28 with result: True
+2025-07-14 01:39:55,499 - reviewer_schedule_maker - INFO - Updating flashcard 27 with result: True
+2025-07-14 01:39:55,506 - reviewer_schedule_maker - INFO - Updating flashcard 26 with result: True
+2025-07-14 01:39:55,512 - reviewer_schedule_maker - INFO - Updating flashcard 25 with result: TIMEOUT
+2025-07-14 01:39:55,518 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-14 01:39:55,518 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 01:39:55,518 - main - INFO - Automatic review session completed
+2025-07-14 01:39:55,518 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 01:44:55,247 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-14 01:44:55,248 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 01:44:55,254 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 5 flashcards
+2025-07-14 01:45:00,278 - pre_review_notification - INFO - Pre-review notification timed out
+2025-07-14 01:45:00,278 - pre_review_notification - INFO - User declined review session
+2025-07-14 01:45:00,279 - reviewer_schedule_maker - INFO - User declined review or notification timed out
+2025-07-14 01:45:00,379 - reviewer_schedule_maker - INFO - Updating flashcard 25 with result: TIMEOUT
+2025-07-14 01:45:00,386 - reviewer_schedule_maker - INFO - Updating flashcard 24 with result: TIMEOUT
+2025-07-14 01:45:00,391 - reviewer_schedule_maker - INFO - Updating flashcard 23 with result: TIMEOUT
+2025-07-14 01:45:00,397 - reviewer_schedule_maker - INFO - Updating flashcard 22 with result: TIMEOUT
+2025-07-14 01:45:00,403 - reviewer_schedule_maker - INFO - Updating flashcard 16 with result: TIMEOUT
+2025-07-14 01:45:00,409 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-14 01:45:00,409 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 3 minutes
+2025-07-14 01:45:00,409 - main - INFO - Automatic review session completed
+2025-07-14 01:45:00,410 - main - INFO - Next review scheduled in 3 minutes
+2025-07-14 01:48:00,233 - reviewer_schedule_maker - INFO - Starting review session with 5 flashcards
+2025-07-14 01:48:00,235 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 01:48:00,243 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 5 flashcards
+2025-07-14 01:48:03,156 - pre_review_notification - INFO - User accepted review session
+2025-07-14 01:48:03,160 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 01:48:03,160 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-14 01:48:03,160 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-14 01:48:03,160 - reviewer_module - INFO - Marking flashcard 28 (tokenization) as TIMEOUT due to early exit
+2025-07-14 01:48:03,160 - reviewer_module - INFO - Marking flashcard 27 (regularization) as TIMEOUT due to early exit
+2025-07-14 01:48:03,161 - reviewer_module - INFO - Marking flashcard 26 (hyperparameter) as TIMEOUT due to early exit
+2025-07-14 01:48:03,161 - reviewer_module - INFO - Marking flashcard 25 (overfitting) as TIMEOUT due to early exit
+2025-07-14 01:48:03,161 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-14 01:48:03,161 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-14 01:48:03,163 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 01:48:03,179 - reviewer_module - INFO - Started review session with 5 flashcards
+2025-07-14 01:48:37,313 - reviewer_module - INFO - Review session completed with 5 results
+2025-07-14 01:48:37,313 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-14 01:48:37,313 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 01:48:37,514 - reviewer_schedule_maker - INFO - Updating flashcard 25 with result: True
+2025-07-14 01:48:37,520 - reviewer_schedule_maker - INFO - Updating flashcard 24 with result: True
+2025-07-14 01:48:37,526 - reviewer_schedule_maker - INFO - Updating flashcard 23 with result: True
+2025-07-14 01:48:37,532 - reviewer_schedule_maker - INFO - Updating flashcard 22 with result: True
+2025-07-14 01:48:37,537 - reviewer_schedule_maker - INFO - Updating flashcard 16 with result: True
+2025-07-14 01:48:37,543 - reviewer_schedule_maker - INFO - Updated 5 flashcards with review results
+2025-07-14 01:48:37,543 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 01:48:37,543 - main - INFO - Automatic review session completed
+2025-07-14 01:48:37,543 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 01:53:37,232 - reviewer_schedule_maker - INFO - Starting review session with 1 flashcards
+2025-07-14 01:53:37,232 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 01:53:37,238 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 1 flashcards
+2025-07-14 01:53:39,549 - pre_review_notification - INFO - User accepted review session
+2025-07-14 01:53:39,558 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 01:53:39,558 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-14 01:53:39,558 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-14 01:53:39,559 - reviewer_module - INFO - Marking flashcard 24 (backpropagation) as TIMEOUT due to early exit
+2025-07-14 01:53:39,559 - reviewer_module - INFO - Marking flashcard 23 (gradient) as TIMEOUT due to early exit
+2025-07-14 01:53:39,559 - reviewer_module - INFO - Marking flashcard 22 (embedding) as TIMEOUT due to early exit
+2025-07-14 01:53:39,559 - reviewer_module - INFO - Marking flashcard 16 (slow) as TIMEOUT due to early exit
+2025-07-14 01:53:39,559 - reviewer_schedule_maker - INFO - Review completed with 5 results
+2025-07-14 01:53:39,559 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-14 01:53:39,560 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 01:53:39,586 - reviewer_module - INFO - Started review session with 1 flashcards
+2025-07-14 01:53:46,311 - reviewer_module - INFO - Review session completed with 1 results
+2025-07-14 01:53:46,311 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-14 01:53:46,311 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 01:53:46,512 - reviewer_schedule_maker - INFO - Updating flashcard 7 with result: True
+2025-07-14 01:53:46,518 - reviewer_schedule_maker - INFO - Updated 1 flashcards with review results
+2025-07-14 01:53:46,519 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 5 minutes
+2025-07-14 01:53:46,519 - main - INFO - Automatic review session completed
+2025-07-14 01:53:46,519 - main - INFO - Next review scheduled in 5 minutes
+2025-07-14 01:58:46,263 - reviewer_schedule_maker - INFO - Starting review session with 3 flashcards
+2025-07-14 01:58:46,264 - pre_review_notification - INFO - Pre-review notification close event triggered
+2025-07-14 01:58:46,271 - pre_review_notification - INFO - Pre-review notification shown with slide animation for 3 flashcards
+2025-07-14 01:58:48,789 - pre_review_notification - INFO - User accepted review session
+2025-07-14 01:58:48,792 - reviewer_schedule_maker - INFO - User accepted review - starting main review session
+2025-07-14 01:58:48,793 - reviewer_schedule_maker - INFO - Closing previous reviewer instance to ensure clean state
+2025-07-14 01:58:48,793 - reviewer_module - INFO - ReviewerModule close event triggered
+2025-07-14 01:58:48,793 - reviewer_schedule_maker - INFO - Review completed with 1 results
+2025-07-14 01:58:48,793 - reviewer_module - INFO - ReviewerModule close event cleanup completed
+2025-07-14 01:58:48,794 - reviewer_schedule_maker - INFO - Created fresh ReviewerModule instance for new session
+2025-07-14 01:58:48,806 - reviewer_module - INFO - Started review session with 3 flashcards
+2025-07-14 01:59:11,783 - reviewer_module - INFO - Review session completed with 3 results
+2025-07-14 01:59:11,786 - reviewer_schedule_maker - INFO - Review completed with 3 results
+2025-07-14 01:59:11,787 - reviewer_module - INFO - Review session cleanup completed successfully
+2025-07-14 01:59:11,987 - reviewer_schedule_maker - INFO - Updating flashcard 21 with result: True
+2025-07-14 01:59:11,994 - reviewer_schedule_maker - INFO - Updating flashcard 20 with result: True
+2025-07-14 01:59:12,000 - reviewer_schedule_maker - INFO - Updating flashcard 19 with result: True
+2025-07-14 01:59:12,006 - reviewer_schedule_maker - INFO - Updated 3 flashcards with review results
+2025-07-14 01:59:12,007 - reviewer_schedule_maker - INFO - Review session completed successfully. Next session in 60 minutes
+2025-07-14 01:59:12,007 - main - INFO - Automatic review session completed
+2025-07-14 01:59:12,007 - main - INFO - Next review scheduled in 60 minutes
