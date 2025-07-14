@@ -23,7 +23,8 @@ class ReviewerScheduleMaker:
             1: 20,   # Stage 1: Info display - shorter timeout
             2: 30,  # Stage 2: Input meaning - more time for typing
             3: 20,  # Stage 3: Multiple choice - medium time
-            4: 30   # Stage 4: Input word - more time for typing
+            4: 30,  # Stage 4: Input word with hints - more time for typing
+            5: 30   # Stage 5: Input word no hints - more time for typing
         }
         self.default_timeout = 10  # Fallback timeout
         

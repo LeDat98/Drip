@@ -49,7 +49,7 @@ class DatabaseManager:
                     wrong_count INTEGER DEFAULT 0,
                     priority_score REAL DEFAULT 0,
                     interval_hours REAL DEFAULT 0.5,
-                    CHECK (stage_id IN (1, 2, 3, 4))
+                    CHECK (stage_id IN (1, 2, 3, 4, 5))
                 )
             """)
             conn.execute("CREATE INDEX IF NOT EXISTS idx_stage_review ON flashcards(stage_id, next_review_time)")
@@ -144,7 +144,7 @@ class DatabaseManager:
             now = datetime.now()
             
             if result == "True":  # Đúng
-                new_stage = min(flashcard.stage_id + 1, 4)
+                new_stage = min(flashcard.stage_id + 1, 5)
                 cursor.execute("""
                     UPDATE flashcards 
                     SET stage_id = ?, correct = ?, last_reviewed_at = ?, 
@@ -325,23 +325,35 @@ class DatabaseManager:
     
     def _calculate_next_interval(self, flashcard: FlashCard, result: str) -> float:
         """Thuật toán 2: Tính interval cho lần ôn tập tiếp theo"""
-        base_intervals = {1: 0.5, 2: 2, 3: 24, 4: 168}
+        base_intervals = {1: 0.5, 2: 2, 3: 24, 4: 48, 5: 168}
         base_interval = base_intervals.get(flashcard.stage_id, 0.5)
         
         if result == "True":
             # Tăng interval khi đúng
-            multiplier = 2.0 if flashcard.stage_id <= 2 else 1.5
+            if flashcard.stage_id <= 2:
+                multiplier = 2.0
+            elif flashcard.stage_id == 3:
+                multiplier = 1.5
+            elif flashcard.stage_id == 4:
+                multiplier = 1.0  # Stage 4: 48h không đổi khi đúng
+            else:  # Stage 5
+                multiplier = 1.0  # Stage 5: 168h không đổi khi đúng
             return base_interval * multiplier
         elif result == "False":
             # Giảm interval khi sai
-            return base_interval * 0.5
+            if flashcard.stage_id == 4:
+                return 24  # Stage 4: 48h → 24h khi sai
+            elif flashcard.stage_id == 5:
+                return 79  # Stage 5: 168h → 79h khi sai (giảm một nửa)
+            else:
+                return base_interval * 0.5
         elif result == "TIMEOUT":
             # NOTE: Function này chỉ được gọi cho Stage 1
-            # Stage 2-4 TIMEOUT giữ nguyên next_review_time cũ
+            # Stage 2-5 TIMEOUT giữ nguyên next_review_time cũ
             return base_interval
         elif result == "ESCAPE":
             # NOTE: Function này chỉ được gọi cho Stage 1  
-            # Stage 2-4 ESCAPE giữ nguyên next_review_time cũ
+            # Stage 2-5 ESCAPE giữ nguyên next_review_time cũ
             return base_interval
         else:
             # Fallback cho các result khác
@@ -352,7 +364,7 @@ class DatabaseManager:
         current_time = datetime.now()
         
         # Điểm cơ bản theo stage
-        stage_priority = {1: 100, 2: 80, 3: 60, 4: 40}
+        stage_priority = {1: 100, 2: 80, 3: 60, 4: 40, 5: 20}
         base_score = stage_priority[flashcard.stage_id]
         
         # Điểm thưởng cho từ vựng quá hạn

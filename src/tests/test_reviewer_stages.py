@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Test file to demo all 4 reviewer stages with sample data
+Test file to demo all 5 reviewer stages with sample data
 This file creates sample flashcards and allows testing each stage independently
 """
 
@@ -41,9 +41,14 @@ class StageTestController(QWidget):
                 stage_id=3
             ),
             4: FlashCard(
-                id=4, word="programming", meaning="the process of creating computer software",
-                example="I enjoy programming in Python.", tag="technology",
+                id=4, word="algorithm", meaning="a set of rules or instructions for solving a problem",
+                example="This algorithm sorts data efficiently.", tag="technology",
                 stage_id=4
+            ),
+            5: FlashCard(
+                id=5, word="development", meaning="the process of creating or improving something",
+                example="Software development requires patience.", tag="technology",
+                stage_id=5
             )
         }
         
@@ -72,14 +77,14 @@ class StageTestController(QWidget):
             FlashCard(id=10, word="test1", meaning="first test word", stage_id=1),
             FlashCard(id=11, word="test2", meaning="second test word", stage_id=2),
             FlashCard(id=12, word="test3", meaning="third test word", stage_id=3),
-            FlashCard(id=13, word="test4", meaning="fourth test word", stage_id=1),
-            FlashCard(id=14, word="test5", meaning="fifth test word", stage_id=2),
+            FlashCard(id=13, word="test4", meaning="fourth test word", stage_id=4),
+            FlashCard(id=14, word="test5", meaning="fifth test word", stage_id=5),
         ]
     
     def setup_ui(self):
         """Setup the test controller UI"""
         self.setWindowTitle("Reviewer Stage Tester")
-        self.setFixedSize(450, 600)
+        self.setFixedSize(450, 680)
         
         # Apply same styling as modal
         self.setStyleSheet("background-color: #676767;")
@@ -139,10 +144,16 @@ class StageTestController(QWidget):
         stages_layout.addWidget(stage3_btn)
         
         # Stage 4 button
-        stage4_btn = QPushButton("Stage 4: Type Word\n(Meaning: 'process of creating software')")
+        stage4_btn = QPushButton("Stage 4: Type Word with Hints\n(Meaning: 'set of rules for solving problem')")
         stage4_btn.setStyleSheet(self.get_button_style())
         stage4_btn.clicked.connect(lambda: self.test_stage(4))
         stages_layout.addWidget(stage4_btn)
+        
+        # Stage 5 button
+        stage5_btn = QPushButton("Stage 5: Type Word (No Hints)\n(Meaning: 'process of creating something')")
+        stage5_btn.setStyleSheet(self.get_button_style())
+        stage5_btn.clicked.connect(lambda: self.test_stage(5))
+        stages_layout.addWidget(stage5_btn)
         
         main_layout.addLayout(stages_layout)
         
@@ -284,7 +295,8 @@ class StageTestController(QWidget):
             1: 7,  # Stage 1: Info display
             2: 15,  # Stage 2: Input meaning  
             3: 10,  # Stage 3: Multiple choice
-            4: 15, # Stage 4: Input word
+            4: 20,  # Stage 4: Input word with hints
+            5: 25   # Stage 5: Input word no hints
         }
         
         self.reviewer.start_review(
@@ -303,7 +315,8 @@ class StageTestController(QWidget):
             1: 10,  # 10 seconds for Stage 1
             2: 20,  # 20 seconds for Stage 2
             3: 15,  # 15 seconds for Stage 3
-            4: 20   # 20 seconds for Stage 4
+            4: 25,  # 25 seconds for Stage 4
+            5: 30   # 30 seconds for Stage 5
         }
         
         self.reviewer.start_review(
@@ -322,7 +335,8 @@ class StageTestController(QWidget):
             1: 3,   # 3 seconds for quick timeout
             2: 5,   # 5 seconds
             3: 4,   # 4 seconds
-            4: 6    # 6 seconds
+            4: 6,   # 6 seconds
+            5: 7    # 7 seconds
         }
         
         self.reviewer.start_review(
@@ -341,7 +355,8 @@ class StageTestController(QWidget):
             1: 15,  # 15 seconds 
             2: 20,  # 20 seconds
             3: 15,  # 15 seconds
-            4: 20   # 20 seconds
+            4: 25,  # 25 seconds
+            5: 30   # 30 seconds
         }
         
         self.reviewer.start_review(
@@ -413,8 +428,9 @@ def main():
     print("3. For Stage 1: Click 'Got It!' or wait for auto-close")
     print("4. For Stage 2: Click one of the multiple choice meaning options")
     print("5. For Stage 3: Click one of the multiple choice word options")
-    print("6. For Stage 4: Type the word and press Enter or click Submit")
-    print("7. Results will appear in the tester window")
+    print("6. For Stage 4: Type the word with spelling hints and press Enter or click Submit")
+    print("7. For Stage 5: Type the word without hints and press Enter or click Submit")
+    print("8. Results will appear in the tester window")
     print("")
     print("Early Exit Tests:")
     print("• Test 5 Flashcards: Normal flow with multiple flashcards")

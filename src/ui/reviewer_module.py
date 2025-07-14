@@ -35,6 +35,14 @@ class ReviewerModule(QWidget):
         self.countdown_timer.timeout.connect(self.update_countdown_display)
         self.remaining_seconds = 0
         
+        # Stage 1 meaning reveal timer
+        self.meaning_reveal_timer = QTimer()
+        self.meaning_reveal_timer.setSingleShot(True)
+        self.meaning_reveal_timer.timeout.connect(self.advance_to_next_flashcard)
+        
+        # Stage 1 state tracking
+        self.stage1_showing_meaning = False
+        
     def setup_ui(self):
         """Setup the user interface"""
         self.setWindowTitle("Vocabulary Review")
@@ -188,6 +196,8 @@ class ReviewerModule(QWidget):
         elif flashcard.stage_id == 3:
             self.show_multiple_choice(flashcard)
         elif flashcard.stage_id == 4:
+            self.show_input_word_with_hints(flashcard)
+        elif flashcard.stage_id == 5:
             self.show_input_word(flashcard)
         
         # Start auto-close timer
@@ -212,23 +222,25 @@ class ReviewerModule(QWidget):
                 self.clear_layout(child.layout())
     
     def show_info_display(self, flashcard: FlashCard):
-        """Stage 1: Info display only"""
+        """Stage 1: Interactive memory test - word first, then meaning reveal"""
+        self.stage1_showing_meaning = False
+        self.current_stage1_flashcard = flashcard
+        
+        # Title with book icon for learning
+        title_label = QLabel("📚 What does this word mean?")
+        title_label.setAlignment(Qt.AlignCenter)
+        title_label.setStyleSheet("font-size: 14px; font-weight: bold; color: #FFD700; margin: 5px; background-color: transparent; border: none;")
+        
         # Word
         word_label = QLabel(flashcard.word)
         word_label.setAlignment(Qt.AlignCenter)
-        word_label.setStyleSheet("font-size: 20px; font-weight: bold; color: #FFFFFF; margin: 5px; background-color: transparent; border: none;")
-        
-        # Meaning
-        meaning_label = QLabel(flashcard.meaning)
-        meaning_label.setAlignment(Qt.AlignCenter)
-        meaning_label.setStyleSheet("font-size: 16px; color: #E0E0E0; margin: 5px; background-color: transparent; border: none;")
-        meaning_label.setWordWrap(True)
+        word_label.setStyleSheet("font-size: 24px; font-weight: bold; color: #FFFFFF; margin: 10px; background-color: transparent; border: none;")
         
         # Example (if available)
         if flashcard.example:
             example_label = QLabel(f"Example: {flashcard.example}")
             example_label.setAlignment(Qt.AlignCenter)
-            example_label.setStyleSheet("font-size: 12px; color: #B0B0B0; margin: 5px; font-style: italic; background-color: transparent; border: none;")
+            example_label.setStyleSheet("font-size: 12px; color: #B0B0B0; margin: 8px; font-style: italic; background-color: transparent; border: none;")
             example_label.setWordWrap(True)
             self.content_layout.addWidget(example_label)
         
@@ -240,31 +252,98 @@ class ReviewerModule(QWidget):
             self.content_layout.addWidget(tag_label)
         
         # Got It button for Stage 1
-        got_it_button = QPushButton("Got It!")
-        got_it_button.setStyleSheet("""
+        self.stage1_got_it_button = QPushButton("Got It!")
+        self.stage1_got_it_button.setStyleSheet("""
             QPushButton {
-                background-color: #888888;
+                background-color: #4CAF50;
                 color: #ffffff;
                 border: none;
-                padding: 8px 16px;
-                border-radius: 4px;
+                padding: 10px 20px;
+                border-radius: 6px;
                 font-weight: bold;
-                font-size: 11px;
+                font-size: 12px;
             }
             QPushButton:hover {
-                background-color: #999999;
+                background-color: #5CBF60;
             }
             QPushButton:pressed {
-                background-color: #777777;
+                background-color: #3CAF40;
             }
         """)
-        got_it_button.clicked.connect(lambda _: self.record_result("True"))
+        self.stage1_got_it_button.clicked.connect(self.handle_stage1_got_it)
         
+        self.content_layout.addWidget(title_label)
         self.content_layout.addWidget(word_label)
-        self.content_layout.addWidget(meaning_label)
-        self.content_layout.addWidget(got_it_button)
+        self.content_layout.addWidget(self.stage1_got_it_button)
         
         # Timeout is already set in show_current_flashcard() based on stage
+    
+    def handle_stage1_got_it(self):
+        """Handle 'Got It!' button click for Stage 1"""
+        if self.stage1_showing_meaning:
+            # Already showing meaning, treat as normal completion
+            self.record_result("True")
+            return
+        
+        # Stop the main timer since user clicked Got It
+        self.auto_close_timer.stop()
+        self.countdown_timer.stop()
+        
+        # Show meaning reveal
+        self.show_stage1_meaning_reveal()
+    
+    def show_stage1_meaning_reveal(self):
+        """Show meaning reveal for Stage 1 with 2-second auto-advance"""
+        self.stage1_showing_meaning = True
+        flashcard = self.current_stage1_flashcard
+        
+        # Clear content
+        self.clear_content()
+        
+        # Success icon - green checkmark
+        success_icon = QLabel("✓")
+        success_icon.setAlignment(Qt.AlignCenter)
+        success_icon.setStyleSheet("font-size: 30px; color: #4CAF50; margin: 5px; background-color: transparent; border: none;")
+        
+        # Word (smaller now)
+        word_label = QLabel(flashcard.word)
+        word_label.setAlignment(Qt.AlignCenter)
+        word_label.setStyleSheet("font-size: 18px; font-weight: bold; color: #FFFFFF; margin: 5px; background-color: transparent; border: none;")
+        
+        # Meaning (bright white)
+        meaning_label = QLabel(flashcard.meaning)
+        meaning_label.setAlignment(Qt.AlignCenter)
+        meaning_label.setStyleSheet("font-size: 16px; font-weight: bold; color: #FFFFFF; margin: 10px; background-color: transparent; border: none;")
+        meaning_label.setWordWrap(True)
+        
+        # Example (if available)
+        if flashcard.example:
+            example_label = QLabel(f"Example: {flashcard.example}")
+            example_label.setAlignment(Qt.AlignCenter)
+            example_label.setStyleSheet("font-size: 11px; color: #B0B0B0; margin: 5px; font-style: italic; background-color: transparent; border: none;")
+            example_label.setWordWrap(True)
+            self.content_layout.addWidget(example_label)
+        
+        self.content_layout.addWidget(success_icon)
+        self.content_layout.addWidget(word_label)
+        self.content_layout.addWidget(meaning_label)
+        
+        # Hide timer during reveal
+        self.timer_label.setText("")
+        
+        # Start 2-second auto-advance timer
+        self.meaning_reveal_timer.start(2000)  # 2 seconds
+    
+    def advance_to_next_flashcard(self):
+        """Advance to next flashcard after meaning reveal"""
+        # Record success
+        if self.current_index < len(self.current_flashcards):
+            current_flashcard = self.current_flashcards[self.current_index]
+            self.results[current_flashcard.id] = "True"
+        
+        # Move to next flashcard
+        self.current_index += 1
+        self.show_current_flashcard()
     
     def show_multiple_choice_meaning(self, flashcard: FlashCard):
         """Stage 2: Multiple choice meaning given word"""
@@ -371,8 +450,86 @@ class ReviewerModule(QWidget):
         self.content_layout.addWidget(meaning_label)
         self.content_layout.addLayout(button_layout)
     
+    def show_input_word_with_hints(self, flashcard: FlashCard):
+        """Stage 4: Input word with spelling hints (30% characters shown)"""        
+        # Generate spelling hints
+        word = flashcard.word.lower()
+        hint_pattern = self.generate_spelling_hints(word)
+        
+        # Meaning
+        meaning_label = QLabel(flashcard.meaning)
+        meaning_label.setAlignment(Qt.AlignCenter)
+        meaning_label.setStyleSheet("font-size: 16px; color: #FFFFFF; margin: 10px; background-color: transparent; border: none;")
+        meaning_label.setWordWrap(True)
+        
+        # Example (if available)
+        if flashcard.example:
+            example_label = QLabel(f"Example: {flashcard.example}")
+            example_label.setAlignment(Qt.AlignCenter)
+            example_label.setStyleSheet("font-size: 12px; color: #B0B0B0; margin: 5px; font-style: italic; background-color: transparent; border: none;")
+            example_label.setWordWrap(True)
+            self.content_layout.addWidget(example_label)
+        
+        # Hint pattern display
+        hint_label = QLabel(f"Hint: {hint_pattern}")
+        hint_label.setAlignment(Qt.AlignCenter)
+        hint_label.setStyleSheet("font-size: 14px; color: #FFD700; margin: 5px; font-family: monospace; background-color: transparent; border: none;")
+        
+        # Input field
+        self.answer_input = QLineEdit()
+        self.answer_input.setPlaceholderText("Fill in the missing letters...")
+        self.answer_input.setStyleSheet("""
+            QLineEdit {
+                background-color: rgba(18, 18, 18, 0.5);
+                color: #E0E0E0;
+                border: 1px solid #444444;
+                border-radius: 4px;
+                padding: 8px;
+                font-size: 11px;
+            }
+            QLineEdit:focus {
+                border: 1px solid #888888;
+                background-color: rgba(18, 18, 18, 0.7);
+            }
+            QLineEdit::placeholder {
+                color: #B0B0B0;
+            }
+        """)
+        
+        # Submit button
+        submit_button = QPushButton("Submit")
+        submit_button.setStyleSheet("""
+            QPushButton {
+                background-color: #888888;
+                color: #ffffff;
+                border: none;
+                padding: 8px 16px;
+                border-radius: 4px;
+                font-weight: bold;
+                font-size: 11px;
+            }
+            QPushButton:hover {
+                background-color: #999999;
+            }
+            QPushButton:pressed {
+                background-color: #777777;
+            }
+        """)
+        
+        self.content_layout.addWidget(meaning_label)
+        self.content_layout.addWidget(hint_label)
+        self.content_layout.addWidget(self.answer_input)
+        self.content_layout.addWidget(submit_button)
+        
+        # Connect signals
+        submit_button.clicked.connect(lambda: self.check_input_answer(flashcard.word))
+        self.answer_input.returnPressed.connect(lambda: self.check_input_answer(flashcard.word))
+        
+        # Focus on input
+        self.answer_input.setFocus()
+    
     def show_input_word(self, flashcard: FlashCard):
-        """Stage 4: Input word given meaning"""
+        """Stage 5: Input word given meaning (no hints)"""
         # Meaning
         meaning_label = QLabel(flashcard.meaning)
         meaning_label.setAlignment(Qt.AlignCenter)
@@ -491,6 +648,27 @@ class ReviewerModule(QWidget):
         
         return options[:4]
     
+    def generate_spelling_hints(self, word: str) -> str:
+        """Generate spelling hints by showing 30% of characters randomly"""
+        if len(word) <= 1:
+            return word
+        
+        # Calculate 30% of characters to show (minimum 1)
+        num_hints = max(1, int(len(word) * 0.3))
+        
+        # Randomly select positions to show
+        hint_positions = random.sample(range(len(word)), num_hints)
+        
+        # Create hint pattern
+        hint_chars = []
+        for i, char in enumerate(word):
+            if i in hint_positions:
+                hint_chars.append(char.upper())
+            else:
+                hint_chars.append('_')
+        
+        return ' '.join(hint_chars)
+    
     def check_input_answer(self, correct_answer: str):
         """Check input answer (case-insensitive, trimmed)"""
         if hasattr(self, 'answer_input') and self.answer_input:
@@ -546,9 +724,23 @@ class ReviewerModule(QWidget):
         # Stop countdown timer
         self.countdown_timer.stop()
         
+        # Stop Stage 1 meaning reveal timer if active
+        if hasattr(self, 'meaning_reveal_timer') and self.meaning_reveal_timer:
+            self.meaning_reveal_timer.stop()
+        
         if self.current_index < len(self.current_flashcards):
             current_flashcard = self.current_flashcards[self.current_index]
-            self.results[current_flashcard.id] = "TIMEOUT"
+            
+            # Check if user has typed anything for Stage 4 and 5
+            if current_flashcard.stage_id in [4, 5] and hasattr(self, 'answer_input') and self.answer_input:
+                user_input = self.answer_input.text().strip()
+                if user_input:  # User typed something, treat as wrong answer
+                    self.results[current_flashcard.id] = "False"
+                else:  # User didn't type anything, treat as timeout
+                    self.results[current_flashcard.id] = "TIMEOUT"
+            else:
+                # For other stages (including Stage 1), always treat as timeout
+                self.results[current_flashcard.id] = "TIMEOUT"
             
             # Early exit: Mark all remaining flashcards as TIMEOUT and show summary
             self.mark_remaining_as_timeout()
@@ -768,6 +960,10 @@ class ReviewerModule(QWidget):
             if hasattr(self, 'summary_timer') and self.summary_timer:
                 self.summary_timer.stop()
                 
+            # Stop Stage 1 meaning reveal timer
+            if hasattr(self, 'meaning_reveal_timer') and self.meaning_reveal_timer:
+                self.meaning_reveal_timer.stop()
+                
             logger.debug("All timers stopped successfully")
             
         except Exception as e:
@@ -783,9 +979,23 @@ class ReviewerModule(QWidget):
     
     def handle_escape_key(self):
         """Handle ESC key press - close modal immediately"""
+        # Stop Stage 1 meaning reveal timer if active
+        if hasattr(self, 'meaning_reveal_timer') and self.meaning_reveal_timer:
+            self.meaning_reveal_timer.stop()
+        
         if self.current_index < len(self.current_flashcards):
             current_flashcard = self.current_flashcards[self.current_index]
-            self.results[current_flashcard.id] = "ESCAPE"
+            
+            # Check if user has typed anything for Stage 4 and 5
+            if current_flashcard.stage_id in [4, 5] and hasattr(self, 'answer_input') and self.answer_input:
+                user_input = self.answer_input.text().strip()
+                if user_input:  # User typed something, treat as wrong answer
+                    self.results[current_flashcard.id] = "False"
+                else:  # User didn't type anything, treat as ESC
+                    self.results[current_flashcard.id] = "ESCAPE"
+            else:
+                # For other stages (including Stage 1), always treat as ESC
+                self.results[current_flashcard.id] = "ESCAPE"
             
             # Stop timers
             self.auto_close_timer.stop()

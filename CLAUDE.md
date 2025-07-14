@@ -36,7 +36,7 @@ python -c "import PyQt5, pystray, pynput; print('All dependencies OK')"
 
 ### Testing and Development
 ```bash
-# Test all 4 reviewer stages independently (GUI-based)
+# Test all 5 reviewer stages independently (GUI-based)
 python src/tests/test_reviewer_stages.py
 
 # Test individual components
@@ -187,13 +187,16 @@ assets/sound/         # Audio notification files
 1. **New** (stage 1) - Info display with "Got It!" button (only button press advances stage)
 2. **Learning** (stage 2) - Multiple choice meaning selection (contextual options)
 3. **Reviewing** (stage 3) - Multiple choice word selection (contextual options)
-4. **Mastered** (stage 4) - Type the word
+4. **Spelling** (stage 4) - Type the word with spelling hints (30% characters shown)
+5. **Mastered** (stage 5) - Type the word without hints
 
 ### Stage Progression Logic
 - **Stage 1**: Only "Got It!" button advances to Stage 2, timeouts keep Stage 1
 - **Stage 2-3**: Correct answers advance stage, wrong answers/timeouts/ESC maintain stage
-- **Stage 4**: Correct answers stay at Stage 4 with longer intervals (7→10.5→15.75 days), achieving true long-term retention
-- **Timeout behavior**: Stage 1 reschedules in 30 minutes, Stage 2-4 use SRS intervals
+- **Stage 4**: Correct answers advance to Stage 5, wrong answers maintain Stage 4 (48h→24h intervals)
+- **Stage 5**: Correct answers stay at Stage 5 with longer intervals (168h), achieving true long-term retention
+- **Timeout behavior**: Stage 1 reschedules in 30 minutes, Stage 2-5 use SRS intervals
+- **Partial input rule**: Stage 4-5 with any typed input treat timeout/ESC as wrong answer
 
 ### Data Flow
 ```

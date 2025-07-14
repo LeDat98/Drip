@@ -7,7 +7,7 @@
 - **🎯 Non-Intrusive Design**: Ultra-compact notifications that minimize workflow disruption
 - **🧠 Spaced Repetition System**: Advanced SRS algorithms for optimal learning intervals
 - **⌨️ Global Hotkeys**: `Ctrl+Space` for flashcard creation, `Ctrl+Shift+R` for manual reviews
-- **📊 4 Learning Stages**: Progressive difficulty from info display to active recall
+- **📊 5 Learning Stages**: Progressive difficulty from interactive learning to mastery verification
 - **🔔 Smart Notifications**: Pre-review notifications with user choice and sound alerts
 - **⚙️ Customizable Settings**: Sound notifications, timeouts, and user preferences
 - **🔄 Intelligent Scheduling**: Contextual word selection and priority scoring
@@ -45,11 +45,12 @@ python main.py
 
 ## 🎮 Learning System
 
-### 4-Stage Learning Process
-1. **New** (Stage 1): Info display with "Got It!" button - shows word, meaning, example
+### 5-Stage Learning Process
+1. **New** (Stage 1): Interactive learning - "📚 What does this word mean?" → "Got It!" → meaning reveal (2s auto-advance)
 2. **Learning** (Stage 2): Multiple choice meaning selection with contextual options
-3. **Reviewing** (Stage 3): Multiple choice word selection with contextual options  
-4. **Mastered** (Stage 4): Type the word when shown meaning - correct answers extend intervals for long-term retention
+3. **Reviewing** (Stage 3): Multiple choice word selection with contextual options
+4. **Spelling** (Stage 4): Type the word with spelling hints (30% characters shown: e.g., "A L _ _ R _ T H M")
+5. **Mastered** (Stage 5): Type the word without hints - pure mastery verification with extended intervals
 
 ### Smart Features
 - **Pre-Review Notifications**: Ultra-compact modal (260x100px) with user choice
@@ -62,41 +63,53 @@ python main.py
 
 ### Component Testing
 ```bash
-# Test all 4 reviewer stages independently (GUI-based)
-python test_reviewer_stages.py
+# Test all 5 reviewer stages independently (GUI-based)
+python src/tests/test_reviewer_stages.py
 
 # Test pre-review notification system
-python test_pre_review_notification.py
+python src/tests/test_pre_review_notification.py
 
 # Test sound notification system
-python -c "from sound_manager import get_sound_manager; sm = get_sound_manager(); print(f'Sound enabled: {sm.is_sound_enabled()}'); sm.play_notification()"
+python -c "from src.utils.sound_manager import get_sound_manager; sm = get_sound_manager(); print(f'Sound enabled: {sm.is_sound_enabled()}'); sm.play_notification()"
 
 # Test individual components
-python -c "from create_new_flashcard import CreateNewFlashcard; print('Flashcard creator OK')"
-python -c "from reviewer_module import ReviewerModule; print('Reviewer module OK')"
-python -c "from database_manager import DatabaseManager; print('Database manager OK')"
-python -c "from reviewer_schedule_maker import ReviewerScheduleMaker; print('Schedule maker OK')"
+python -c "from src.ui.create_new_flashcard import CreateNewFlashcard; print('Flashcard creator OK')"
+python -c "from src.ui.reviewer_module import ReviewerModule; print('Reviewer module OK')"
+python -c "from src.database.database_manager import DatabaseManager; print('Database manager OK')"
+python -c "from src.core.reviewer_schedule_maker import ReviewerScheduleMaker; print('Schedule maker OK')"
 ```
 
 ### Test Features
-- **Individual Stage Testing**: Test each stage (1-4) independently
+- **Individual Stage Testing**: Test each stage (1-5) independently
 - **Multi-Flashcard Testing**: Test with 5 flashcards in sequence
 - **Timeout Scenario Testing**: Test early exit on timeout with short timeouts
 - **ESC Scenario Testing**: Test early exit on ESC key press
 - **Interactive GUI**: Visual test controller with buttons for each scenario
+- **Stage 4 Testing**: Spelling hints with sample word "algorithm"
+- **Stage 5 Testing**: No-hints typing with sample word "development"
 
 ## 🏗️ Architecture
 
 ### Core Components
 ```
+src/
+├── core/                         # Business logic layer
+│   └── reviewer_schedule_maker.py
+├── database/                     # Data access layer  
+│   └── database_manager.py
+├── ui/                           # User interface layer
+│   ├── create_new_flashcard.py  # Flashcard creation UI
+│   ├── pre_review_notification.py # Pre-review notification modal
+│   ├── reviewer_module.py        # Review session UI (5 test types)
+│   └── settings_window.py        # Application settings UI
+├── utils/                        # Utility/service layer
+│   └── sound_manager.py          # Audio notification system
+└── tests/                        # Test modules
+    ├── test_pre_review_notification.py
+    └── test_reviewer_stages.py
+
 main.py                           # System manager and entry point
-├── create_new_flashcard.py       # Flashcard creation UI
-├── pre_review_notification.py    # Pre-review notification modal
-├── reviewer_module.py            # Review session UI (4 test types)
-├── reviewer_schedule_maker.py    # Business logic controller
-├── database_manager.py           # Data access layer with SRS algorithms
-├── sound_manager.py              # Audio notification system
-└── settings_window.py            # Application settings UI
+launch_drip.py                    # Application launcher with environment setup
 ```
 
 ### Data Flow
@@ -124,7 +137,7 @@ ReviewerScheduleMaker ← ← ← ← ← ← ← ← ←
 
 ### Settings
 - **Sound Alerts**: Configurable via Settings window
-- **Stage Timeouts**: Stage 1: 5s, Stage 2: 15s, Stage 3: 10s, Stage 4: 15s
+- **Stage Timeouts**: Stage 1: 20s, Stage 2: 30s, Stage 3: 20s, Stage 4: 30s, Stage 5: 30s
 - **Auto-scheduling**: Uses SRS intervals with priority scoring
 - **Audio Files**: Located in `static/sound/` directory
 
@@ -145,17 +158,20 @@ pkill -f "python.*launch_drip.py"
 ### Database Operations
 ```bash
 # Database inspection
-sqlite3 drip.db "SELECT * FROM flashcards LIMIT 10;"
+sqlite3 data/drip.db "SELECT * FROM flashcards LIMIT 10;"
 
 # Monitor due flashcards
-sqlite3 drip.db "SELECT word, stage_id, next_review_time, priority_score FROM flashcards WHERE next_review_time <= datetime('now') ORDER BY priority_score DESC;"
+sqlite3 data/drip.db "SELECT word, stage_id, next_review_time, priority_score FROM flashcards WHERE next_review_time <= datetime('now') ORDER BY priority_score DESC;"
+
+# Count flashcards by stage
+sqlite3 data/drip.db "SELECT stage_id, COUNT(*) as count FROM flashcards GROUP BY stage_id;"
 ```
 
 ### Common Issues
 1. **System tray icon not appearing**: Install `python3-dev libdbus-1-dev` and restart
 2. **Hotkeys not working**: Check virtual environment activation and permissions
 3. **PyQt5 issues**: Try `pip uninstall PyQt5 && pip install PyQt5==5.15.9`
-4. **Database reset**: `rm drip.db` (caution: deletes all data)
+4. **Database reset**: `rm data/drip.db` (caution: deletes all data)
 
 ## 🛠️ Development
 
@@ -167,11 +183,16 @@ sqlite3 drip.db "SELECT word, stage_id, next_review_time, priority_score FROM fl
 - **Comprehensive testing** suite for all components
 
 ### Recent Enhancements
-- Ultra-compact pre-review notification system
-- Configurable sound notification system
-- Settings management with JSON persistence
-- Enhanced database operations with local timezone support
-- Improved contextual learning with related word selection
+- **Enhanced 5-Stage Learning System**: Progressive difficulty with spelling hints and mastery verification
+- **Interactive Stage 1**: "What does this word mean?" → meaning reveal → auto-advance for active learning
+- **Spelling Hints (Stage 4)**: 30% random character hints for gradual typing mastery
+- **No-Hints Typing (Stage 5)**: Pure recall for long-term retention verification
+- **Smart Intervals**: Stage 4 (48h→24h), Stage 5 (168h→79h) on wrong answers
+- **Ultra-compact pre-review notification system** with smooth animations
+- **Configurable sound notification system** with cross-platform support
+- **Settings management** with JSON persistence and user-friendly UI
+- **Enhanced database operations** with local timezone support and contextual learning
+- **Organized package structure** with clear separation of concerns
 
 For detailed development guidelines, see `CLAUDE.md`.
 
