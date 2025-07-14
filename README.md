@@ -49,7 +49,7 @@ python main.py
 1. **New** (Stage 1): Info display with "Got It!" button - shows word, meaning, example
 2. **Learning** (Stage 2): Multiple choice meaning selection with contextual options
 3. **Reviewing** (Stage 3): Multiple choice word selection with contextual options  
-4. **Mastered** (Stage 4): Type the word when shown meaning
+4. **Mastered** (Stage 4): Type the word when shown meaning - correct answers extend intervals for long-term retention
 
 ### Smart Features
 - **Pre-Review Notifications**: Ultra-compact modal (260x100px) with user choice

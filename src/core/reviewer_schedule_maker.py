@@ -400,7 +400,7 @@ class ReviewerScheduleMaker:
         """
         try:
             # Get any flashcards (not just due ones)
-            from database_manager import DatabaseManager
+            from src.database.database_manager import DatabaseManager
             
             with DatabaseManager(self.database_manager.db_path).database_manager.db_path as db_path:
                 import sqlite3

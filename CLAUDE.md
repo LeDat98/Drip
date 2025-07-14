@@ -191,7 +191,8 @@ assets/sound/         # Audio notification files
 
 ### Stage Progression Logic
 - **Stage 1**: Only "Got It!" button advances to Stage 2, timeouts keep Stage 1
-- **Stage 2-4**: Correct answers advance stage, wrong answers/timeouts/ESC maintain stage
+- **Stage 2-3**: Correct answers advance stage, wrong answers/timeouts/ESC maintain stage
+- **Stage 4**: Correct answers stay at Stage 4 with longer intervals (7→10.5→15.75 days), achieving true long-term retention
 - **Timeout behavior**: Stage 1 reschedules in 30 minutes, Stage 2-4 use SRS intervals
 
 ### Data Flow
