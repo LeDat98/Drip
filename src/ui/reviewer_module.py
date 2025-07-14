@@ -108,7 +108,7 @@ class ReviewerModule(QWidget):
             self.current_flashcards = flashcards
             self.current_index = 0
             self.results = {}
-            self.stage_timeouts = stage_timeouts or {1: 7, 2: 15, 3: 12, 4: 15}
+            self.stage_timeouts = stage_timeouts or {1: 15, 2: 20, 3: 15, 4: 30}
             self.contextual_words = contextual_words or []
             self.contextual_meanings = contextual_meanings or []
             

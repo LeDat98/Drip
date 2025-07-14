@@ -453,7 +453,7 @@ class DatabaseManager:
                     # Tính thời gian đến từ sắp due sớm nhất
                     next_due = datetime.fromisoformat(next_due_time.replace('Z', '+00:00')) if isinstance(next_due_time, str) else next_due_time
                     minutes_until_next = max(5, int((next_due - datetime.now()).total_seconds() / 60))
-                    return min(minutes_until_next, 60)  # Tối đa 1 giờ
+                    return min(minutes_until_next, 30)  # Tối đa 1 giờ
                 else:
                     return 5  # Default 30 phút nếu không có từ nào
             elif due_count <= 5:

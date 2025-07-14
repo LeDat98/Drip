@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Drip is a micro vocabulary learning system that integrates into the user's work environment. It displays non-intrusive flashcard reviews as periodic notifications using a spaced repetition system (SRS). The application runs in the background with a system tray icon and uses global hotkeys for quick access.
 
+## Github Repo link (no change it)
+'https://github.com/LeDat98/Drip.git'
 ## Development Commands
 
 ### Environment Setup
@@ -35,22 +37,22 @@ python -c "import PyQt5, pystray, pynput; print('All dependencies OK')"
 ### Testing and Development
 ```bash
 # Test all 4 reviewer stages independently (GUI-based)
-python test_reviewer_stages.py
+python src/tests/test_reviewer_stages.py
 
 # Test individual components
-python -c "from create_new_flashcard import CreateNewFlashcard; print('Flashcard creator OK')"
-python -c "from reviewer_module import ReviewerModule; print('Reviewer module OK')"
-python -c "from database_manager import DatabaseManager; print('Database manager OK')"
-python -c "from reviewer_schedule_maker import ReviewerScheduleMaker; print('Schedule maker OK')"
+python -c "from src.ui.create_new_flashcard import CreateNewFlashcard; print('Flashcard creator OK')"
+python -c "from src.ui.reviewer_module import ReviewerModule; print('Reviewer module OK')"
+python -c "from src.database.database_manager import DatabaseManager; print('Database manager OK')"
+python -c "from src.core.reviewer_schedule_maker import ReviewerScheduleMaker; print('Schedule maker OK')"
 
 # Test pre-review notification system (current session feature)
-python test_pre_review_notification.py
+python src/tests/test_pre_review_notification.py
 
 # Test sound notification system (current session feature)  
-python -c "from sound_manager import get_sound_manager; sm = get_sound_manager(); print(f'Sound enabled: {sm.is_sound_enabled()}'); sm.play_notification()"
+python -c "from src.utils.sound_manager import get_sound_manager; sm = get_sound_manager(); print(f'Sound enabled: {sm.is_sound_enabled()}'); sm.play_notification()"
 ```
 
-### Testing Features in test_reviewer_stages.py
+### Testing Features in src/tests/test_reviewer_stages.py
 - **Individual Stage Testing**: Test each stage (1-4) independently
 - **Multi-Flashcard Testing**: Test with 5 flashcards in sequence
 - **Timeout Scenario Testing**: Test early exit on timeout (short timeouts)
@@ -58,7 +60,7 @@ python -c "from sound_manager import get_sound_manager; sm = get_sound_manager()
 - **Results Analysis**: Detailed breakdown of True/False/TIMEOUT/ESCAPE results
 - **Interactive GUI**: Visual test controller with buttons for each test scenario
 
-### Testing Pre-Review Notification in test_pre_review_notification.py
+### Testing Pre-Review Notification in src/tests/test_pre_review_notification.py
 - **Standalone Notification Testing**: Test notification modal independently
 - **Integrated Workflow Testing**: Test full workflow with database integration
 - **Empty Database Testing**: Test behavior when no flashcards are due
@@ -73,37 +75,67 @@ python -c "from sound_manager import get_sound_manager; sm = get_sound_manager()
 
 ## Architecture
 
+### Project Structure (Organized Package Layout)
+
+```
+src/
+├── core/               # Business logic layer
+│   └── reviewer_schedule_maker.py
+├── database/           # Data access layer  
+│   └── database_manager.py
+├── ui/                 # User interface layer
+│   ├── create_new_flashcard.py
+│   ├── pre_review_notification.py
+│   ├── reviewer_module.py
+│   ├── settings_window.py
+│   └── modal_style.html
+├── utils/              # Utility/service layer
+│   └── sound_manager.py
+└── tests/              # Test modules
+    ├── test_pre_review_notification.py
+    └── test_reviewer_stages.py
+
+# Entry points (at root level)
+main.py               # System manager and entry point
+launch_drip.py        # Application launcher with environment setup
+
+# Data and assets
+data/                 # Database and settings storage
+assets/sound/         # Audio notification files
+```
+
 ### Core Components
 
 **main.py** - System manager and entry point
 - Manages system tray icon and global hotkeys (Ctrl+Space, Ctrl+Shift+R)
 - Handles automatic review scheduling using QTimer
 - Coordinates between all modules
+- Imports from organized src.* package structure
 
-**database_manager.py** - Data access layer
-- SQLite database with flashcards table
+**src/database/database_manager.py** - Data access layer
+- SQLite database with flashcards table (data/drip.db)
 - Implements SRS algorithms for scheduling reviews
 - Handles priority scoring and interval calculations
 - Database schema includes stage_id (1-4), review statistics, and timing data
-- Smart timeout handling: Stage 1 timeouts don't progress, Stage 2-4 timeouts don't progress but reschedule
+- Smart timeout handling: All stages (1-4) preserve next_review_time on TIMEOUT to keep flashcards due for next session
 - ESCAPE key results handled separately from timeouts
 - Local time usage for created_at and next_review_time (fixes timezone issues)
-- New flashcards scheduled 30 minutes after creation (not immediately)
+- New flashcards scheduled 30 minutes after creation (with optimized 30-minute max interval check)
 - Contextual word selection: retrieves meanings/words from ±10 ID range for memory reinforcement
 - Stage 2 contextual meanings: helps recall related vocabulary learned together
 - Stage 3 contextual words: reinforces word associations from similar time periods
 
-**create_new_flashcard.py** - Flashcard creation UI
+**src/ui/create_new_flashcard.py** - Flashcard creation UI
 - Modal window for inputting new vocabulary with dark theme
 - Fields: word, meaning, example, tag
 - Keyboard shortcuts: Enter to save, Esc to close
 - Consistent styling with modal_style.html color scheme
 
-**pre_review_notification.py** - Pre-review notification modal
+**src/ui/pre_review_notification.py** - Pre-review notification modal
 - Ultra-compact notification modal (260x100px) that appears before main review session
 - 3-field design: message with icon, flashcard count, mini action buttons
 - Smooth slide-down animation (300ms) from top of screen for natural appearance
-- **Sound notification**: Plays custom DripSoud3.wav when modal appears (configurable)
+- **Sound notification**: Plays custom audio when modal appears (configurable)
 - Shows flashcard count and gives user choice to proceed or postpone
 - 5-second auto-close timeout (marks all flashcards as TIMEOUT)
 - Two mini action buttons: "Let's Go!" (proceed) and "Not Now" (postpone)
@@ -111,7 +143,7 @@ python -c "from sound_manager import get_sound_manager; sm = get_sound_manager()
 - Positioned very close to top-right corner (20px from top) to minimize workflow interruption
 - OutCubic easing for smooth deceleration animation effect
 
-**reviewer_module.py** - Review session UI
+**src/ui/reviewer_module.py** - Review session UI
 - Displays different test types based on flashcard stage (4 stages)
 - Dark theme UI matching modal_style.html color scheme
 - Stage-specific timeouts (configurable via ReviewerScheduleMaker)
@@ -126,7 +158,7 @@ python -c "from sound_manager import get_sound_manager; sm = get_sound_manager()
 - Stage 3 uses contextual multiple choice words for enhanced word association
 - Adaptive modal sizing: adjusts height based on content (example text, multiple choice options)
 
-**reviewer_schedule_maker.py** - Business logic controller
+**src/core/reviewer_schedule_maker.py** - Business logic controller
 - Orchestrates review sessions between database and UI
 - Manages pre-review notification workflow and main review execution
 - Handles test preparation and result processing
@@ -136,19 +168,19 @@ python -c "from sound_manager import get_sound_manager; sm = get_sound_manager()
 - Prepares contextual meanings for Stage 2 and contextual words for Stage 3
 - Pre-review notification integration with user choice handling
 
-**sound_manager.py** - Audio notification system
+**src/utils/sound_manager.py** - Audio notification system
 - Manages notification sounds with user settings integration
-- Primary sound: DripSoud3.wav via QSound (with DripSoud1/2.wav fallbacks)
+- Primary sound: assets/sound/ audio files via QSound (with multiple fallbacks)
 - Supports WAV/OGG/AIFF formats for cross-platform compatibility
 - Fallback to system beep if no audio files available
-- User-configurable on/off toggle saved in drip_settings.json
+- User-configurable on/off toggle saved in data/drip_settings.json
 - Cross-platform audio support (Windows/Linux/macOS)
 
-**settings_window.py** - Application settings UI
+**src/ui/settings_window.py** - Application settings UI
 - Dark-themed settings modal with frameless design
 - Alert Settings group with sound notification toggle
 - Reset to Default functionality
-- Settings auto-save to drip_settings.json
+- Settings auto-save to data/drip_settings.json
 - ESC key support for quick close
 
 ### Learning Stages
@@ -242,7 +274,7 @@ The `flashcards` table tracks:
    - Added 10 AI vocabulary words (algorithm, neural, transformer, etc.)
    - Fixed TIMEOUT logic to preserve next_review_time for better scheduling
    - All stages now handle TIMEOUT/ESC consistently (no artificial delays)
-   - Calculate_next_test_interval() properly returns 5 minutes when flashcards are due
+   - Calculate_next_test_interval() optimized with 30-minute max interval to handle new flashcard creation scenarios
 
 5. **Improved User Experience**:
    - Non-intrusive pre-review workflow respects user's current focus
@@ -351,12 +383,12 @@ The `flashcards` table tracks:
 
 ### Data Management
 - Database connections use context managers for proper resource cleanup
-- SQLite database file created as `drip.db` in project root
+- SQLite database file created as `data/drip.db` in data directory
 - SRS algorithms with priority scoring and adaptive intervals
 - Virtual environment located at `DripEnv/` (activate before development)
 - Application logs written to `drip.log` file
-- Settings configuration stored in `drip_settings.json`
-- Audio files located in `static/sound/` directory (DripSoud1/2/3.wav)
+- Settings configuration stored in `data/drip_settings.json`
+- Audio files located in `assets/sound/` directory (DripSoud1/2/3.wav)
 
 ## UI Color Scheme
 
@@ -389,19 +421,20 @@ All modal components use consistent dark theme:
 - Tests smooth slide-down animation with 300ms duration
 - Visual test controller with informative status updates
 
-## New Files Created This Session
+## Key Files and Locations
 
 ### Core Components
-- **pre_review_notification.py** - Ultra-compact pre-review modal with slide animation and sound
-- **sound_manager.py** - Cross-platform audio notification system with QSound
-- **settings_window.py** - Dark-themed settings UI with alert configuration
-- **test_pre_review_notification.py** - Comprehensive testing suite for new features
+- **src/ui/pre_review_notification.py** - Ultra-compact pre-review modal with slide animation and sound
+- **src/utils/sound_manager.py** - Cross-platform audio notification system with QSound
+- **src/ui/settings_window.py** - Dark-themed settings UI with alert configuration
+- **src/tests/test_pre_review_notification.py** - Comprehensive testing suite for features
 
 ### Configuration & Assets  
-- **drip_settings.json** - User settings persistence (sound preferences, etc.)
-- **static/sound/DripSoud1.wav** - Primary notification sound file
-- **static/sound/DripSoud2.wav** - Fallback notification sound file  
-- **static/sound/DripSoud3.wav** - Alternative notification sound file
+- **data/drip_settings.json** - User settings persistence (sound preferences, etc.)
+- **data/drip.db** - SQLite database for flashcard storage
+- **assets/sound/DripSoud1.wav** - Primary notification sound file
+- **assets/sound/DripSoud2.wav** - Fallback notification sound file  
+- **assets/sound/DripSoud3.wav** - Alternative notification sound file
 
 ## Testing and Debugging
 
@@ -441,14 +474,14 @@ sqlite3 drip.db "SELECT word, stage_id, last_reviewed_at, correct_count, review_
 ### Component Testing
 ```bash
 # Test reviewer stages independently
-python test_reviewer_stages.py
+python src/tests/test_reviewer_stages.py
 
 # Test flashcard creation modal
 python -c "
 import sys
 from PyQt5.QtWidgets import QApplication
-from create_new_flashcard import CreateNewFlashcard
-from database_manager import DatabaseManager
+from src.ui.create_new_flashcard import CreateNewFlashcard
+from src.database.database_manager import DatabaseManager
 
 app = QApplication(sys.argv)
 db = DatabaseManager()
@@ -459,7 +492,7 @@ app.exec_()
 
 # Test database operations
 python -c "
-from database_manager import DatabaseManager
+from src.database.database_manager import DatabaseManager
 db = DatabaseManager()
 print('Database connection OK')
 flashcards = db.get_due_flashcards(limit=5)
@@ -480,8 +513,8 @@ pip uninstall PyQt5
 pip install PyQt5==5.15.9
 
 # Reset database (caution: deletes all data)
-rm drip.db
-python -c "from database_manager import DatabaseManager; DatabaseManager()"
+rm data/drip.db
+python -c "from src.database.database_manager import DatabaseManager; DatabaseManager()"
 ```
 
 ## Memories

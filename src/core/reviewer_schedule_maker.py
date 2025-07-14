@@ -20,10 +20,10 @@ class ReviewerScheduleMaker:
         
         # Timeout settings for each stage (in seconds)
         self.stage_timeouts = {
-            1: 5,   # Stage 1: Info display - shorter timeout
-            2: 15,  # Stage 2: Input meaning - more time for typing
-            3: 10,  # Stage 3: Multiple choice - medium time
-            4: 15   # Stage 4: Input word - more time for typing
+            1: 20,   # Stage 1: Info display - shorter timeout
+            2: 30,  # Stage 2: Input meaning - more time for typing
+            3: 20,  # Stage 3: Multiple choice - medium time
+            4: 30   # Stage 4: Input word - more time for typing
         }
         self.default_timeout = 10  # Fallback timeout
         
