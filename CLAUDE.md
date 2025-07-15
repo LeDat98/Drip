@@ -85,13 +85,16 @@ src/
 │   └── database_manager.py
 ├── ui/                 # User interface layer
 │   ├── create_new_flashcard.py
+│   ├── notification_modal.py
 │   ├── pre_review_notification.py
 │   ├── reviewer_module.py
 │   ├── settings_window.py
 │   └── modal_style.html
 ├── utils/              # Utility/service layer
+│   ├── auto_insert_new_word.py
 │   └── sound_manager.py
 └── tests/              # Test modules
+    ├── test_auto_insert.py
     ├── test_pre_review_notification.py
     └── test_reviewer_stages.py
 
@@ -102,6 +105,7 @@ launch_drip.py        # Application launcher with environment setup
 # Data and assets
 data/                 # Database and settings storage
 assets/sound/         # Audio notification files
+insert_new_words.json # Vocabulary data for auto-insert
 ```
 
 ### Core Components
@@ -109,7 +113,8 @@ assets/sound/         # Audio notification files
 **main.py** - System manager and entry point
 - Manages system tray icon and global hotkeys (Ctrl+Space, Ctrl+Shift+R)
 - Handles automatic review scheduling using QTimer
-- Coordinates between all modules
+- Auto-insert daily vocabulary checking with precise single-shot timer
+- Coordinates between all modules including new notification system
 - Imports from organized src.* package structure
 
 **src/database/database_manager.py** - Data access layer
@@ -179,9 +184,28 @@ assets/sound/         # Audio notification files
 **src/ui/settings_window.py** - Application settings UI
 - Dark-themed settings modal with frameless design
 - Alert Settings group with sound notification toggle
+- Auto-Insert Settings group with daily count and time configuration
+- Dataset completion display showing remaining days to finish vocabulary
 - Reset to Default functionality
 - Settings auto-save to data/drip_settings.json
 - ESC key support for quick close
+
+**src/ui/notification_modal.py** - General-purpose notification system
+- Compact modal (280x85px) for various system notifications
+- Slide-down animation with smooth OutCubic easing
+- Auto-close timer with countdown display
+- DripSoud3.wav sound notification support
+- Dark theme consistent with existing UI components
+- Reusable for vocabulary additions and other notifications
+
+**src/utils/auto_insert_new_word.py** - Daily vocabulary insertion system
+- Loads vocabulary from insert_new_words.json (48 words)
+- Vietnamese meanings with English examples
+- Duplicate word detection and prevention
+- Time-based insertion scheduling with precise millisecond timing
+- Daily count tracking and completion status
+- Integration with database and settings system
+- Single-shot timer implementation for exact scheduling
 
 ### Learning Stages
 1. **New** (stage 1) - Info display with "Got It!" button (only button press advances stage)
@@ -253,45 +277,78 @@ The `flashcards` table tracks:
 ## Recent Updates (Current Session Summary)
 
 ### Major Features Added This Session
-1. **Pre-Review Notification System**: 
-   - Ultra-compact modal (260x100px) with smooth slide-down animation
-   - 3-field design: message with icon, flashcard count, action buttons
-   - User choice: "Let's Go!" or "Not Now" before review starts
-   - 5-second auto-close with real-time countdown
-   - Positioned at top-right corner to minimize workflow interruption
+1. **Auto-Insert Daily Vocabulary System**:
+   - Automatic insertion of vocabulary words from JSON file (`insert_new_words.json`)
+   - Time-based insertion with user-configurable schedule (daily count + time)
+   - Duplicate prevention and smart word selection from 48 vocabulary words
+   - Vietnamese meanings with English examples for better comprehension
+   - Settings integration with dataset completion calculation
 
-2. **Sound Notification System**:
-   - Custom notification sound (DripSoud3.wav) plays when pre-review modal appears
-   - QSound-based audio playback with multiple fallback sounds
-   - User-configurable on/off toggle in Settings window
-   - Cross-platform audio support (Windows/Linux/macOS)
-   - Settings auto-save to drip_settings.json
+2. **Modal Notification System**:
+   - General-purpose notification modal (`src/ui/notification_modal.py`)
+   - Compact design (280x85px) with slide-down animation
+   - DripSoud3.wav sound notification on vocabulary insertion
+   - Auto-close timer with countdown display
+   - Dark theme consistent with existing UI components
 
-3. **Settings Management**:
-   - New Settings window accessible via system tray menu
-   - Dark-themed modal with Alert Settings group
-   - Simple checkbox to enable/disable notification sounds
-   - Reset to Default functionality
-   - ESC key support for quick close
+3. **Settings Window Enhancements**:
+   - Auto-Insert Settings group with enable/disable toggle
+   - Daily count spinner (1-50 words per day)
+   - Time picker for scheduling insertions
+   - Dataset completion display showing days remaining
+   - Real-time calculation of learning progress
 
-4. **Database Enhancements**:
-   - Added 10 AI vocabulary words (algorithm, neural, transformer, etc.)
-   - Fixed TIMEOUT logic to preserve next_review_time for better scheduling
-   - All stages now handle TIMEOUT/ESC consistently (no artificial delays)
-   - Calculate_next_test_interval() optimized with 30-minute max interval to handle new flashcard creation scenarios
+4. **Precise Timer-Based Auto-Insert**:
+   - Single-shot timer with exact millisecond precision for scheduled insertions
+   - Calculates exact time until target and triggers at precise moment
+   - Fixes issue where app opened before target time wouldn't insert
+   - Automatic timer stop after successful insertion (single-shot behavior)
+   - Today-only insertion logic prevents duplicate daily entries
 
-5. **Improved User Experience**:
-   - Non-intrusive pre-review workflow respects user's current focus
-   - Smooth animations with OutCubic easing for natural feel
-   - Immediate audio feedback when review opportunity arises
-   - User maintains complete control over when to engage with reviews
+5. **Database and JSON Integration**:
+   - 48 vocabulary words with Vietnamese meanings and English examples
+   - Simplified meaning format (removed explanatory text after "-")
+   - Auto-insert tracks existing words to prevent duplicates
+   - Contextual word selection respects database state
 
 ### Technical Improvements
-- **Animation System**: QPropertyAnimation with slide-down effect (300ms)
-- **Audio Architecture**: SoundManager singleton with file path prioritization
-- **Settings Persistence**: JSON-based configuration with graceful fallbacks
-- **Modal Positioning**: Dynamic screen width calculation for consistent placement
-- **Thread Safety**: Proper signal/slot connections and cleanup procedures
+- **Precise Timer System**: Single-shot timer with millisecond-level accuracy for auto-insert scheduling
+- **Timer Bug Fix**: Resolved issue where app opened before target time wouldn't insert words
+- **Auto-Insert Architecture**: Calculate exact time until target and trigger at precise moment
+- **Modal System**: Reusable notification framework for future features
+- **Settings Persistence**: Auto-insert configuration saved to drip_settings.json
+- **Animation System**: Smooth slide-down effects with QPropertyAnimation
+- **Sound Integration**: DripSoud3.wav notification on vocabulary additions
+- **Database Logic**: Smart duplicate detection and word counting
+
+### Session Implementation Details
+- **Auto-Insert System**: Complete implementation with 48 Vietnamese vocabulary words
+- **Timer Implementation**: Option 2 selected - precise single-shot timer with millisecond accuracy
+- **Bug Resolution**: Fixed timer issue where app opened before target time wouldn't insert
+- **User Testing**: Implemented per user feedback for minute-level precision vs 5-minute intervals
+- **Setting Integration**: Auto-insert enabled at 2:05 AM with 10 words per day (from settings)
+- **Notification System**: Modal notification with DripSoud3.wav audio feedback
+- **Database Integration**: Smart duplicate detection and word insertion tracking
+
+### Key Implementation Changes (main.py)
+```python
+# Timer for auto-insert check (precise timing)
+self.auto_insert_timer = QTimer()
+self.auto_insert_timer.timeout.connect(self.check_auto_insert_words)
+self.auto_insert_timer.setSingleShot(True)  # Single shot timer for precise timing
+
+def setup_auto_insert_timer(self):
+    """Setup precise timer for auto-insert checking"""
+    # Calculate exact milliseconds until target time
+    time_until_target = (target_datetime - current_time).total_seconds() * 1000
+    # Start timer to trigger exactly at target time
+    self.auto_insert_timer.start(int(time_until_target))
+```
+
+### Previous Session Features (Maintained)
+- **Pre-Review Notification System**: Ultra-compact modal with user choice
+- **Sound Notification System**: Configurable audio alerts
+- **Settings Management**: Complete settings window with reset functionality
 
 ### Previous Session Features (Maintained)
 - **Countdown Timer**: Real-time countdown display that actually decreases
@@ -428,17 +485,19 @@ All modal components use consistent dark theme:
 ## Key Files and Locations
 
 ### Core Components
-- **src/ui/pre_review_notification.py** - Ultra-compact pre-review modal with slide animation and sound
-- **src/utils/sound_manager.py** - Cross-platform audio notification system with QSound
-- **src/ui/settings_window.py** - Dark-themed settings UI with alert configuration
-- **src/tests/test_pre_review_notification.py** - Comprehensive testing suite for features
+- **src/ui/notification_modal.py** - General-purpose notification modal with slide animation and sound
+- **src/utils/auto_insert_new_word.py** - Daily vocabulary insertion system with timer-based scheduling
+- **src/ui/settings_window.py** - Enhanced settings UI with auto-insert configuration and dataset completion
+- **src/utils/sound_manager.py** - Cross-platform audio notification system with DripSoud3.wav priority
+- **src/tests/test_auto_insert.py** - Comprehensive testing suite for auto-insert functionality
 
 ### Configuration & Assets  
-- **data/drip_settings.json** - User settings persistence (sound preferences, etc.)
+- **data/drip_settings.json** - User settings persistence (sound, auto-insert preferences)
 - **data/drip.db** - SQLite database for flashcard storage
-- **assets/sound/DripSoud1.wav** - Primary notification sound file
-- **assets/sound/DripSoud2.wav** - Fallback notification sound file  
-- **assets/sound/DripSoud3.wav** - Alternative notification sound file
+- **insert_new_words.json** - Vocabulary dataset (48 words) with Vietnamese meanings and English examples
+- **assets/sound/DripSoud3.wav** - Primary notification sound file for auto-insert
+- **assets/sound/DripSoud1.wav** - Fallback notification sound file
+- **assets/sound/DripSoud2.wav** - Alternative notification sound file
 
 ## Testing and Debugging
 
@@ -477,6 +536,9 @@ sqlite3 drip.db "SELECT word, stage_id, last_reviewed_at, correct_count, review_
 
 ### Component Testing
 ```bash
+# Test auto-insert functionality
+python src/tests/test_auto_insert.py
+
 # Test reviewer stages independently
 python src/tests/test_reviewer_stages.py
 
@@ -502,6 +564,27 @@ print('Database connection OK')
 flashcards = db.get_due_flashcards(limit=5)
 print(f'Found {len(flashcards)} due flashcards')
 "
+
+# Test auto-insert functionality
+python -c "
+from src.utils.auto_insert_new_word import AutoInsertNewWord
+from datetime import datetime
+auto_insert = AutoInsertNewWord()
+words = auto_insert.load_words_from_json()
+print(f'Loaded {len(words)} words from JSON')
+current_time = datetime.now()
+result = auto_insert.auto_insert_daily_words(3, current_time.hour, current_time.minute)
+print(f'Auto-insert result: {result}')
+"
+
+# Test notification modal
+python -c "
+from src.ui.notification_modal import show_vocabulary_added_notification
+import sys
+from PyQt5.QtWidgets import QApplication
+app = QApplication(sys.argv)
+show_vocabulary_added_notification(5, 3)
+"
 ```
 
 ### Common Issues and Solutions
@@ -516,9 +599,27 @@ sudo apt-get install python3-dev libdbus-1-dev
 pip uninstall PyQt5
 pip install PyQt5==5.15.9
 
+# Fix Git authentication in Cursor IDE
+./fix_git_env.sh
+
 # Reset database (caution: deletes all data)
 rm data/drip.db
 python -c "from src.database.database_manager import DatabaseManager; DatabaseManager()"
+```
+
+### Git Setup for Cursor IDE
+```bash
+# If you encounter git push issues in Cursor, run this:
+./fix_git_env.sh
+
+# Or manually fix environment:
+export GIT_ASKPASS=""
+export GIT_TERMINAL_PROMPT=0
+git config --global credential.helper store
+
+# Verify setup:
+git status
+git remote -v
 ```
 
 ## Memories

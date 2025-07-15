@@ -1,0 +1,340 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "word": "algorithm",
+      "meaning": "thuật toán",
+      "example": "The sorting algorithm efficiently organizes data in ascending order.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 2,
+      "word": "neural",
+      "meaning": "thần kinh",
+      "example": "Neural networks are inspired by the human brain's structure.",
+      "tag": "ai"
+    },
+    {
+      "id": 3,
+      "word": "transformer",
+      "meaning": "bộ biến đổi",
+      "example": "The transformer model revolutionized natural language processing.",
+      "tag": "ai"
+    },
+    {
+      "id": 4,
+      "word": "efficient",
+      "meaning": "hiệu quả",
+      "example": "This efficient method reduces processing time by 50%.",
+      "tag": "general"
+    },
+    {
+      "id": 5,
+      "word": "innovative",
+      "meaning": "đổi mới",
+      "example": "The company's innovative approach attracted many investors.",
+      "tag": "general"
+    },
+    {
+      "id": 6,
+      "word": "database",
+      "meaning": "cơ sở dữ liệu",
+      "example": "The database stores customer information securely.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 7,
+      "word": "framework",
+      "meaning": "khung làm việc",
+      "example": "Django is a popular web development framework for Python.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 8,
+      "word": "optimization",
+      "meaning": "tối ưu hóa",
+      "example": "Code optimization improved the application's performance significantly.",
+      "tag": "general"
+    },
+    {
+      "id": 9,
+      "word": "implementation",
+      "meaning": "triển khai",
+      "example": "The implementation of the new system took three months.",
+      "tag": "general"
+    },
+    {
+      "id": 10,
+      "word": "architecture",
+      "meaning": "kiến trúc",
+      "example": "The software architecture follows a microservices pattern.",
+      "tag": "general"
+    },
+    {
+      "id": 11,
+      "word": "programming",
+      "meaning": "lập trình",
+      "example": "Python programming is popular among data scientists.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 12,
+      "word": "variable",
+      "meaning": "biến số",
+      "example": "The variable 'count' stores the number of items.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 13,
+      "word": "function",
+      "meaning": "hàm",
+      "example": "This function calculates the area of a circle.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 14,
+      "word": "debugging",
+      "meaning": "gỡ lỗi",
+      "example": "Debugging helps identify why the program crashes.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 15,
+      "word": "interface",
+      "meaning": "giao diện",
+      "example": "The user interface is intuitive and easy to navigate.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 16,
+      "word": "methodology",
+      "meaning": "phương pháp luận",
+      "example": "The research methodology ensures reliable results.",
+      "tag": "general"
+    },
+    {
+      "id": 17,
+      "word": "systematic",
+      "meaning": "có hệ thống",
+      "example": "A systematic approach helps solve complex problems.",
+      "tag": "general"
+    },
+    {
+      "id": 18,
+      "word": "comprehensive",
+      "meaning": "toàn diện",
+      "example": "The comprehensive guide covers all aspects of the topic.",
+      "tag": "general"
+    },
+    {
+      "id": 19,
+      "word": "analytical",
+      "meaning": "phân tích",
+      "example": "Her analytical skills helped identify the root cause.",
+      "tag": "general"
+    },
+    {
+      "id": 20,
+      "word": "productivity",
+      "meaning": "năng suất",
+      "example": "Remote work increased employee productivity by 20%.",
+      "tag": "general"
+    },
+    {
+      "id": 21,
+      "word": "synchronous",
+      "meaning": "đồng bộ",
+      "example": "Synchronous communication requires real-time interaction.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 22,
+      "word": "asynchronous",
+      "meaning": "không đồng bộ",
+      "example": "Asynchronous programming improves application responsiveness.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 23,
+      "word": "scalable",
+      "meaning": "có thể mở rộng",
+      "example": "The scalable architecture handles millions of users.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 24,
+      "word": "maintenance",
+      "meaning": "bảo trì",
+      "example": "Regular maintenance prevents system failures.",
+      "tag": "general"
+    },
+    {
+      "id": 25,
+      "word": "validation",
+      "meaning": "xác thực",
+      "example": "Data validation ensures input accuracy.",
+      "tag": "general"
+    },
+    {
+      "id": 26,
+      "word": "iteration",
+      "meaning": "lặp lại",
+      "example": "Each iteration of the loop processes one item.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 27,
+      "word": "recursion",
+      "meaning": "đệ quy",
+      "example": "Recursion is useful for solving factorial problems.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 28,
+      "word": "authentication",
+      "meaning": "xác thực",
+      "example": "Two-factor authentication provides better security.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 29,
+      "word": "encryption",
+      "meaning": "mã hóa",
+      "example": "Encryption protects sensitive data from hackers.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 30,
+      "word": "deployment",
+      "meaning": "triển khai",
+      "example": "The deployment process takes about 30 minutes.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 31,
+      "word": "configuration",
+      "meaning": "cấu hình",
+      "example": "The server configuration needs to be updated.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 32,
+      "word": "integration",
+      "meaning": "tích hợp",
+      "example": "API integration connects different software systems.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 33,
+      "word": "migration",
+      "meaning": "di chuyển",
+      "example": "Database migration requires careful planning.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 34,
+      "word": "consistency",
+      "meaning": "tính nhất quán",
+      "example": "Data consistency is crucial for reliable systems.",
+      "tag": "general"
+    },
+    {
+      "id": 35,
+      "word": "reliability",
+      "meaning": "độ tin cậy",
+      "example": "System reliability improved after the updates.",
+      "tag": "general"
+    },
+    {
+      "id": 36,
+      "word": "performance",
+      "meaning": "hiệu suất",
+      "example": "Application performance monitoring helps identify bottlenecks.",
+      "tag": "general"
+    },
+    {
+      "id": 37,
+      "word": "monitoring",
+      "meaning": "giám sát",
+      "example": "Continuous monitoring ensures system health.",
+      "tag": "general"
+    },
+    {
+      "id": 38,
+      "word": "compliance",
+      "meaning": "tuân thủ",
+      "example": "GDPR compliance is mandatory for European businesses.",
+      "tag": "general"
+    },
+    {
+      "id": 39,
+      "word": "vulnerability",
+      "meaning": "lỗ hổng",
+      "example": "Security vulnerability assessment revealed several risks.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 40,
+      "word": "protocol",
+      "meaning": "giao thức",
+      "example": "HTTP protocol enables web communication.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 41,
+      "word": "bandwidth",
+      "meaning": "băng thông",
+      "example": "High bandwidth allows faster file transfers.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 42,
+      "word": "latency",
+      "meaning": "độ trễ",
+      "example": "Low latency is essential for real-time applications.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 43,
+      "word": "throughput",
+      "meaning": "thông lượng",
+      "example": "System throughput increased after optimization.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 44,
+      "word": "concurrency",
+      "meaning": "đồng thời",
+      "example": "Concurrency control prevents data corruption.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 45,
+      "word": "parallelism",
+      "meaning": "song song",
+      "example": "Parallelism improves computational efficiency.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 46,
+      "word": "serialization",
+      "meaning": "tuần tự hóa",
+      "example": "JSON serialization converts objects to text format.",
+      "tag": "computer-science"
+    },
+    {
+      "id": 49,
+      "word": "workflow",
+      "meaning": "quy trình làm việc",
+      "example": "The development workflow includes testing and deployment.",
+      "tag": "general"
+    },
+    {
+      "id": 50,
+      "word": "automation",
+      "meaning": "tự động hóa",
+      "example": "Automation reduces manual errors and saves time.",
+      "tag": "general"
+    }
+  ]
+}

@@ -12,6 +12,8 @@ from src.ui.create_new_flashcard import CreateNewFlashcard
 from src.core.reviewer_schedule_maker import ReviewerScheduleMaker
 from src.ui.settings_window import SettingsWindow
 from src.utils.sound_manager import get_sound_manager
+from src.utils.auto_insert_new_word import AutoInsertNewWord
+from src.ui.notification_modal import show_vocabulary_added_notification
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -38,6 +40,7 @@ class DripApp(QObject):
         self.create_flashcard_window = None
         self.settings_window = None
         self.sound_manager = get_sound_manager()
+        self.auto_insert_manager = AutoInsertNewWord()
         
         # System tray
         self.tray_icon = None
@@ -45,6 +48,11 @@ class DripApp(QObject):
         # Timer for automatic reviews
         self.review_timer = QTimer()
         self.review_timer.timeout.connect(self.start_automatic_review)
+        
+        # Timer for auto-insert check (precise timing)
+        self.auto_insert_timer = QTimer()
+        self.auto_insert_timer.timeout.connect(self.check_auto_insert_words)
+        self.auto_insert_timer.setSingleShot(True)  # Single shot timer for precise timing
         
         # Initialize system tray
         self.setup_system_tray()
@@ -55,6 +63,10 @@ class DripApp(QObject):
         # Connect signals
         self.show_create_signal.connect(self.show_create_flashcard)
         self.start_review_signal.connect(self.start_manual_review)
+        
+        # Check auto-insert daily words and setup timer
+        self.check_auto_insert_words()
+        self.setup_auto_insert_timer()
         
         # Check for overdue flashcards on startup
         self.check_startup_reviews()
@@ -269,6 +281,126 @@ class DripApp(QObject):
             # Still schedule next review on error
             self.schedule_next_review()
     
+    def check_auto_insert_words(self):
+        """Check and execute auto-insert daily vocabulary"""
+        try:
+            # Load auto-insert settings
+            auto_insert_settings = self.load_auto_insert_settings()
+            
+            if not auto_insert_settings.get('enabled', False):
+                logger.info("Auto-insert is disabled")
+                return
+            
+            # Get settings
+            daily_count = auto_insert_settings.get('daily_count', 10)
+            target_hour = auto_insert_settings.get('hour', 7)
+            target_minute = auto_insert_settings.get('minute', 0)
+            
+            # Execute auto-insert
+            result = self.auto_insert_manager.auto_insert_daily_words(
+                target_count=daily_count,
+                target_hour=target_hour,
+                target_minute=target_minute
+            )
+            
+            # Log result
+            if result['success']:
+                if result['inserted_count'] > 0:
+                    logger.info(f"Auto-insert: {result['message']}")
+                    # Show modal notification if words were added
+                    show_vocabulary_added_notification(result['inserted_count'], auto_close_seconds=4)
+                    
+                    # Also show system tray notification as backup
+                    self.tray_icon.showMessage(
+                        "Daily Vocabulary Added",
+                        f"Added {result['inserted_count']} new words to your vocabulary list",
+                        QSystemTrayIcon.Information,
+                        3000
+                    )
+                    
+                    # Timer will automatically stop since it's single-shot
+                    logger.info("Auto-insert completed successfully, timer stopped")
+                else:
+                    logger.info(f"Auto-insert: {result['message']}")
+                    # Timer will automatically stop since it's single-shot
+            else:
+                logger.warning(f"Auto-insert failed: {result['message']}")
+                # Timer will automatically stop since it's single-shot
+                
+        except Exception as e:
+            logger.error(f"Error in auto-insert check: {e}")
+    
+    def setup_auto_insert_timer(self):
+        """Setup precise timer for auto-insert checking"""
+        try:
+            # Load auto-insert settings
+            auto_insert_settings = self.load_auto_insert_settings()
+            
+            if not auto_insert_settings.get('enabled', False):
+                logger.info("Auto-insert disabled, timer not set")
+                return
+            
+            # Get settings
+            target_hour = auto_insert_settings.get('hour', 7)
+            target_minute = auto_insert_settings.get('minute', 0)
+            
+            # Calculate target time for today
+            from datetime import datetime, timedelta
+            current_time = datetime.now()
+            target_datetime = datetime.combine(
+                current_time.date(),
+                datetime.min.time().replace(hour=target_hour, minute=target_minute)
+            )
+            
+            # If target time has passed today, don't set timer
+            if current_time >= target_datetime:
+                logger.info(f"Target time {target_hour:02d}:{target_minute:02d} has passed, timer not set")
+                return
+            
+            # Calculate milliseconds until target time
+            time_until_target = (target_datetime - current_time).total_seconds() * 1000
+            
+            # Start timer to trigger exactly at target time
+            self.auto_insert_timer.start(int(time_until_target))
+            
+            logger.info(f"Auto-insert timer set for {target_hour:02d}:{target_minute:02d} "
+                       f"({time_until_target/1000/60:.1f} minutes from now)")
+            
+        except Exception as e:
+            logger.error(f"Error setting up auto-insert timer: {e}")
+    
+    def load_auto_insert_settings(self):
+        """Load auto-insert settings from settings file"""
+        try:
+            import json
+            import os
+            settings_file = "data/drip_settings.json"
+            
+            if os.path.exists(settings_file):
+                with open(settings_file, 'r', encoding='utf-8') as f:
+                    settings = json.load(f)
+                    return settings.get('auto_insert', {
+                        'enabled': False,
+                        'daily_count': 10,
+                        'hour': 7,
+                        'minute': 0
+                    })
+            else:
+                return {
+                    'enabled': False,
+                    'daily_count': 10,
+                    'hour': 7,
+                    'minute': 0
+                }
+        except Exception as e:
+            logger.error(f"Error loading auto-insert settings: {e}")
+            return {
+                'enabled': False,
+                'daily_count': 10,
+                'hour': 7,
+                'minute': 0
+            }
+
     def check_startup_reviews(self):
         """Check for overdue flashcards on startup"""
         try:
@@ -338,6 +470,7 @@ class DripApp(QObject):
         
         # Stop timers
         self.review_timer.stop()
+        self.auto_insert_timer.stop()
         
         # Close any open windows
         if self.create_flashcard_window:
