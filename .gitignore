@@ -27,11 +27,11 @@ wheels/
 *.egg
 
 # Data files
-data/*.db
+# data/*.db
 data/*.sqlite
 data/*.sqlite3
 data/*.log
-data/drip_settings.json
+# data/drip_settings.json
 
 # IDE
 .vscode/

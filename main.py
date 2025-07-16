@@ -357,8 +357,8 @@ class DripApp(QObject):
                 logger.info(f"Target time {target_hour:02d}:{target_minute:02d} has passed, timer not set")
                 return
             
-            # Calculate milliseconds until target time
-            time_until_target = (target_datetime - current_time).total_seconds() * 1000
+            # Calculate milliseconds until target time + 1 minute buffer to ensure we pass the target time
+            time_until_target = (target_datetime - current_time).total_seconds() * 1000 + 60000
             
             # Start timer to trigger exactly at target time
             self.auto_insert_timer.start(int(time_until_target))

@@ -2,6 +2,9 @@ import sqlite3
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 import random
+import logging
+
+logger = logging.getLogger(__name__)
 
 class FlashCard:
     def __init__(self, id=None, word="", meaning="", example="", tag="", 
@@ -54,7 +57,83 @@ class DatabaseManager:
             """)
             conn.execute("CREATE INDEX IF NOT EXISTS idx_stage_review ON flashcards(stage_id, next_review_time)")
             conn.execute("CREATE INDEX IF NOT EXISTS idx_priority ON flashcards(priority_score DESC)")
+            
+            # Migration: Update constraint to support stage 5 if needed
+            self._migrate_stage_constraint()
+            
             conn.commit()
+    
+    def _migrate_stage_constraint(self):
+        """Migrate database to support stage 5 if constraint is old"""
+        try:
+            # Test if we can insert stage 5 - if not, need to recreate table
+            try:
+                with sqlite3.connect(self.db_path) as test_conn:
+                    test_conn.execute("INSERT INTO flashcards (word, meaning, stage_id) VALUES ('test_stage_5', 'test', 5)")
+                    test_conn.execute("DELETE FROM flashcards WHERE word = 'test_stage_5'")
+                    test_conn.commit()
+            except sqlite3.IntegrityError:
+                # Constraint doesn't allow stage 5, need to recreate table
+                logger.info("Database constraint doesn't support stage 5, migrating...")
+                self._recreate_table_with_new_constraint()
+                    
+        except Exception as e:
+            logger.error(f"Error during constraint migration: {e}")
+    
+    def _recreate_table_with_new_constraint(self):
+        """Recreate flashcards table with updated constraint for stage 5"""
+        try:
+            with sqlite3.connect(self.db_path) as conn:
+                # Create backup table
+                conn.execute("""
+                    CREATE TABLE flashcards_backup AS 
+                    SELECT * FROM flashcards
+                """)
+                
+                # Drop original table
+                conn.execute("DROP TABLE flashcards")
+                
+                # Create new table with correct constraint
+                conn.execute("""
+                    CREATE TABLE flashcards (
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        word TEXT NOT NULL,
+                        meaning TEXT NOT NULL, 
+                        example TEXT,
+                        tag TEXT,
+                        stage_id INTEGER NOT NULL DEFAULT 1,
+                        correct BOOLEAN DEFAULT NULL,
+                        created_at TIMESTAMP DEFAULT NULL,
+                        last_reviewed_at TIMESTAMP DEFAULT NULL,
+                        next_review_time TIMESTAMP DEFAULT NULL,
+                        review_count INTEGER DEFAULT 0,
+                        correct_count INTEGER DEFAULT 0,
+                        wrong_count INTEGER DEFAULT 0,
+                        priority_score REAL DEFAULT 0,
+                        interval_hours REAL DEFAULT 0.5,
+                        CHECK (stage_id IN (1, 2, 3, 4, 5))
+                    )
+                """)
+                
+                # Restore data
+                conn.execute("""
+                    INSERT INTO flashcards 
+                    SELECT * FROM flashcards_backup
+                """)
+                
+                # Drop backup table
+                conn.execute("DROP TABLE flashcards_backup")
+                
+                # Recreate indexes
+                conn.execute("CREATE INDEX IF NOT EXISTS idx_stage_review ON flashcards(stage_id, next_review_time)")
+                conn.execute("CREATE INDEX IF NOT EXISTS idx_priority ON flashcards(priority_score DESC)")
+                
+                conn.commit()
+                logger.info("Successfully migrated database to support stage 5")
+                
+        except Exception as e:
+            logger.error(f"Error recreating table: {e}")
+            raise
     
     def create_flashcard(self, flashcard_data: Dict) -> int:
         """Tạo flashcard mới từ modal CreateNewFlashcard"""
